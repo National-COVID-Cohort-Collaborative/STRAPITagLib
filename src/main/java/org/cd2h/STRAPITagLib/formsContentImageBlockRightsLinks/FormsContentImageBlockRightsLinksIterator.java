@@ -29,6 +29,9 @@ public class FormsContentImageBlockRightsLinksIterator extends STRAPITagLibBodyT
 
     PreparedStatement stat = null;
     ResultSet rs = null;
+    String fromList = null;
+    String joinCriteria = null;
+    String filterCriteria = null;
     String sortCriteria = null;
     int limitCriteria = 0;
     String var = null;
@@ -164,6 +167,7 @@ public class FormsContentImageBlockRightsLinksIterator extends STRAPITagLibBodyT
             int webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT count(*) from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (contentImageBlockRightId == 0 ? "" : " and content_image_block_right_id = ?")
                                                         + (formId == 0 ? "" : " and form_id = ?")
                                                         + generateLimitCriteria());
@@ -180,6 +184,7 @@ public class FormsContentImageBlockRightsLinksIterator extends STRAPITagLibBodyT
             webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT strapi.forms_content_image_block_rights_links.id from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (contentImageBlockRightId == 0 ? "" : " and content_image_block_right_id = ?")
                                                         + (formId == 0 ? "" : " and form_id = ?")
                                                         + " order by " + generateSortCriteria()  +  generateLimitCriteria());
@@ -232,6 +237,14 @@ public class FormsContentImageBlockRightsLinksIterator extends STRAPITagLibBodyT
           theBuffer.append(" and strapi.forms.id = strapi.forms_content_image_block_rights_links.form_id");
 
       return theBuffer.toString();
+    }
+
+    private String generateFilterCriteria() {
+        if (filterCriteria != null) {
+            return " and " + filterCriteria;
+        } else {
+            return "";
+        }
     }
 
     private String generateSortCriteria() {
@@ -346,6 +359,30 @@ public class FormsContentImageBlockRightsLinksIterator extends STRAPITagLibBodyT
         this.sortCriteria = null;
         this.var = null;
         this.rsCount = 0;
+    }
+
+    public String getFromList() {
+        return fromList;
+    }
+
+    public void setFromList(String fromList) {
+        this.fromList = fromList;
+    }
+
+    public String getJoinCriteria() {
+        return joinCriteria;
+    }
+
+    public void setJoinCriteria(String joinCriteria) {
+        this.joinCriteria = joinCriteria;
+    }
+
+    public String getFilterCriteria() {
+        return filterCriteria;
+    }
+
+    public void setFilterCriteria(String filterCriteria) {
+        this.filterCriteria = filterCriteria;
     }
 
     public String getSortCriteria() {

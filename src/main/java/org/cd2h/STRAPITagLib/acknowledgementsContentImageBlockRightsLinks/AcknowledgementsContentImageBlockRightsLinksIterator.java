@@ -29,6 +29,9 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
 
     PreparedStatement stat = null;
     ResultSet rs = null;
+    String fromList = null;
+    String joinCriteria = null;
+    String filterCriteria = null;
     String sortCriteria = null;
     int limitCriteria = 0;
     String var = null;
@@ -164,6 +167,7 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
             int webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT count(*) from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (acknowledgementId == 0 ? "" : " and acknowledgement_id = ?")
                                                         + (contentImageBlockRightId == 0 ? "" : " and content_image_block_right_id = ?")
                                                         + generateLimitCriteria());
@@ -180,6 +184,7 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
             webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT strapi.acknowledgements_content_image_block_rights_links.id from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (acknowledgementId == 0 ? "" : " and acknowledgement_id = ?")
                                                         + (contentImageBlockRightId == 0 ? "" : " and content_image_block_right_id = ?")
                                                         + " order by " + generateSortCriteria()  +  generateLimitCriteria());
@@ -232,6 +237,14 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
           theBuffer.append(" and strapi.content_image_block_rights.id = strapi.acknowledgements_content_image_block_rights_links.content_image_block_right_id");
 
       return theBuffer.toString();
+    }
+
+    private String generateFilterCriteria() {
+        if (filterCriteria != null) {
+            return " and " + filterCriteria;
+        } else {
+            return "";
+        }
     }
 
     private String generateSortCriteria() {
@@ -346,6 +359,30 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
         this.sortCriteria = null;
         this.var = null;
         this.rsCount = 0;
+    }
+
+    public String getFromList() {
+        return fromList;
+    }
+
+    public void setFromList(String fromList) {
+        this.fromList = fromList;
+    }
+
+    public String getJoinCriteria() {
+        return joinCriteria;
+    }
+
+    public void setJoinCriteria(String joinCriteria) {
+        this.joinCriteria = joinCriteria;
+    }
+
+    public String getFilterCriteria() {
+        return filterCriteria;
+    }
+
+    public void setFilterCriteria(String filterCriteria) {
+        this.filterCriteria = filterCriteria;
     }
 
     public String getSortCriteria() {

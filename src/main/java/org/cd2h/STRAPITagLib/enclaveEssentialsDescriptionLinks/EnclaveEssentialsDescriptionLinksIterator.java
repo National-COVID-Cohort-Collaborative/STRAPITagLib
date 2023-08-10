@@ -29,6 +29,9 @@ public class EnclaveEssentialsDescriptionLinksIterator extends STRAPITagLibBodyT
 
     PreparedStatement stat = null;
     ResultSet rs = null;
+    String fromList = null;
+    String joinCriteria = null;
+    String filterCriteria = null;
     String sortCriteria = null;
     int limitCriteria = 0;
     String var = null;
@@ -164,6 +167,7 @@ public class EnclaveEssentialsDescriptionLinksIterator extends STRAPITagLibBodyT
             int webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT count(*) from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ?")
                                                         + (enclaveEssentialId == 0 ? "" : " and enclave_essential_id = ?")
                                                         + generateLimitCriteria());
@@ -180,6 +184,7 @@ public class EnclaveEssentialsDescriptionLinksIterator extends STRAPITagLibBodyT
             webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT strapi.enclave_essentials_description_links.id from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ?")
                                                         + (enclaveEssentialId == 0 ? "" : " and enclave_essential_id = ?")
                                                         + " order by " + generateSortCriteria()  +  generateLimitCriteria());
@@ -232,6 +237,14 @@ public class EnclaveEssentialsDescriptionLinksIterator extends STRAPITagLibBodyT
           theBuffer.append(" and strapi.enclave_essentials.id = strapi.enclave_essentials_description_links.enclave_essential_id");
 
       return theBuffer.toString();
+    }
+
+    private String generateFilterCriteria() {
+        if (filterCriteria != null) {
+            return " and " + filterCriteria;
+        } else {
+            return "";
+        }
     }
 
     private String generateSortCriteria() {
@@ -346,6 +359,30 @@ public class EnclaveEssentialsDescriptionLinksIterator extends STRAPITagLibBodyT
         this.sortCriteria = null;
         this.var = null;
         this.rsCount = 0;
+    }
+
+    public String getFromList() {
+        return fromList;
+    }
+
+    public void setFromList(String fromList) {
+        this.fromList = fromList;
+    }
+
+    public String getJoinCriteria() {
+        return joinCriteria;
+    }
+
+    public void setJoinCriteria(String joinCriteria) {
+        this.joinCriteria = joinCriteria;
+    }
+
+    public String getFilterCriteria() {
+        return filterCriteria;
+    }
+
+    public void setFilterCriteria(String filterCriteria) {
+        this.filterCriteria = filterCriteria;
     }
 
     public String getSortCriteria() {

@@ -29,6 +29,9 @@ public class FaqListsHarmonizationFaqsLinksIterator extends STRAPITagLibBodyTagS
 
     PreparedStatement stat = null;
     ResultSet rs = null;
+    String fromList = null;
+    String joinCriteria = null;
+    String filterCriteria = null;
     String sortCriteria = null;
     int limitCriteria = 0;
     String var = null;
@@ -164,6 +167,7 @@ public class FaqListsHarmonizationFaqsLinksIterator extends STRAPITagLibBodyTagS
             int webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT count(*) from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (faqListId == 0 ? "" : " and faq_list_id = ?")
                                                         + (faqId == 0 ? "" : " and faq_id = ?")
                                                         + generateLimitCriteria());
@@ -180,6 +184,7 @@ public class FaqListsHarmonizationFaqsLinksIterator extends STRAPITagLibBodyTagS
             webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT strapi.faq_lists_harmonization_faqs_links.id from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (faqListId == 0 ? "" : " and faq_list_id = ?")
                                                         + (faqId == 0 ? "" : " and faq_id = ?")
                                                         + " order by " + generateSortCriteria()  +  generateLimitCriteria());
@@ -232,6 +237,14 @@ public class FaqListsHarmonizationFaqsLinksIterator extends STRAPITagLibBodyTagS
           theBuffer.append(" and strapi.faqs.id = strapi.faq_lists_harmonization_faqs_links.faq_id");
 
       return theBuffer.toString();
+    }
+
+    private String generateFilterCriteria() {
+        if (filterCriteria != null) {
+            return " and " + filterCriteria;
+        } else {
+            return "";
+        }
     }
 
     private String generateSortCriteria() {
@@ -346,6 +359,30 @@ public class FaqListsHarmonizationFaqsLinksIterator extends STRAPITagLibBodyTagS
         this.sortCriteria = null;
         this.var = null;
         this.rsCount = 0;
+    }
+
+    public String getFromList() {
+        return fromList;
+    }
+
+    public void setFromList(String fromList) {
+        this.fromList = fromList;
+    }
+
+    public String getJoinCriteria() {
+        return joinCriteria;
+    }
+
+    public void setJoinCriteria(String joinCriteria) {
+        this.joinCriteria = joinCriteria;
+    }
+
+    public String getFilterCriteria() {
+        return filterCriteria;
+    }
+
+    public void setFilterCriteria(String filterCriteria) {
+        this.filterCriteria = filterCriteria;
     }
 
     public String getSortCriteria() {

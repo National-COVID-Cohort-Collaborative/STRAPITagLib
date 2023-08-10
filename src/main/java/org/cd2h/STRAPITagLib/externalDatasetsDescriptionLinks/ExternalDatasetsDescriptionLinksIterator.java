@@ -29,6 +29,9 @@ public class ExternalDatasetsDescriptionLinksIterator extends STRAPITagLibBodyTa
 
     PreparedStatement stat = null;
     ResultSet rs = null;
+    String fromList = null;
+    String joinCriteria = null;
+    String filterCriteria = null;
     String sortCriteria = null;
     int limitCriteria = 0;
     String var = null;
@@ -164,6 +167,7 @@ public class ExternalDatasetsDescriptionLinksIterator extends STRAPITagLibBodyTa
             int webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT count(*) from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ?")
                                                         + (externalDatasetId == 0 ? "" : " and external_dataset_id = ?")
                                                         + generateLimitCriteria());
@@ -180,6 +184,7 @@ public class ExternalDatasetsDescriptionLinksIterator extends STRAPITagLibBodyTa
             webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT strapi.external_datasets_description_links.id from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ?")
                                                         + (externalDatasetId == 0 ? "" : " and external_dataset_id = ?")
                                                         + " order by " + generateSortCriteria()  +  generateLimitCriteria());
@@ -232,6 +237,14 @@ public class ExternalDatasetsDescriptionLinksIterator extends STRAPITagLibBodyTa
           theBuffer.append(" and strapi.external_datasets.id = strapi.external_datasets_description_links.external_dataset_id");
 
       return theBuffer.toString();
+    }
+
+    private String generateFilterCriteria() {
+        if (filterCriteria != null) {
+            return " and " + filterCriteria;
+        } else {
+            return "";
+        }
     }
 
     private String generateSortCriteria() {
@@ -346,6 +359,30 @@ public class ExternalDatasetsDescriptionLinksIterator extends STRAPITagLibBodyTa
         this.sortCriteria = null;
         this.var = null;
         this.rsCount = 0;
+    }
+
+    public String getFromList() {
+        return fromList;
+    }
+
+    public void setFromList(String fromList) {
+        this.fromList = fromList;
+    }
+
+    public String getJoinCriteria() {
+        return joinCriteria;
+    }
+
+    public void setJoinCriteria(String joinCriteria) {
+        this.joinCriteria = joinCriteria;
+    }
+
+    public String getFilterCriteria() {
+        return filterCriteria;
+    }
+
+    public void setFilterCriteria(String filterCriteria) {
+        this.filterCriteria = filterCriteria;
     }
 
     public String getSortCriteria() {

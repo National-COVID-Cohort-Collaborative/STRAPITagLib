@@ -23,6 +23,8 @@
 									<th>PublishedAt</th>
 									<th>CreatedById</th>
 									<th>UpdatedById</th>
+									<th>BeforeStartingHeader</th>
+									<th>BeforeStartingBlock</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -38,6 +40,8 @@
 											<td><strapi:accountCreationsPublishedAt /></td>
 											<td><strapi:accountCreationsCreatedById /></td>
 											<td><strapi:accountCreationsUpdatedById /></td>
+											<td><strapi:accountCreationsBeforeStartingHeader /></td>
+											<td><strapi:accountCreationsBeforeStartingBlock /></td>
 											<td><a href="../accountCreations/edit.jsp?ID=<strapi:accountCreationsID />">edit</a></td>
 											<td><a href="../accountCreations/delete.jsp?ID=<strapi:accountCreationsID />">delete</a></td>
 										</tr>
@@ -63,6 +67,8 @@
 		<strapi:accountCreationsPublishedAt />
 		<strapi:accountCreationsCreatedById />
 		<strapi:accountCreationsUpdatedById />
+		<strapi:accountCreationsBeforeStartingHeader />
+		<strapi:accountCreationsBeforeStartingBlock />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:accountCreations>
 			</strapi:foreachAccountCreations>
                 </div>

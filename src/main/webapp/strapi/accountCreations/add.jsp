@@ -44,6 +44,14 @@
 										<input type="text" id="updatedById" name="updatedById" size="40" value="">
 										<br>
 
+										<label for="beforeStartingHeader">BeforeStartingHeader</label>
+										<input type="text" id="beforeStartingHeader" name="beforeStartingHeader" size="40" value="">
+										<br>
+
+										<label for="beforeStartingBlock">BeforeStartingBlock</label>
+										<input type="text" id="beforeStartingBlock" name="beforeStartingBlock" size="40" value="">
+										<br>
+
 										<input type="submit" name="submit" value="Save">
 										<input type="submit" name="submit" value="Cancel">
 									</fieldset>
@@ -67,6 +75,8 @@
 			<strapi:accountCreationsPublishedAt publishedAt = "${param.publishedAt}" />
 			<strapi:accountCreationsCreatedById createdById = "${param.createdById}" />
 			<strapi:accountCreationsUpdatedById updatedById = "${param.updatedById}" />
+			<strapi:accountCreationsBeforeStartingHeader beforeStartingHeader = "${param.beforeStartingHeader}" />
+			<strapi:accountCreationsBeforeStartingBlock beforeStartingBlock = "${param.beforeStartingBlock}" />
 		</strapi:accountCreations>
 		<c:redirect url="list.jsp" />
 	</c:when>

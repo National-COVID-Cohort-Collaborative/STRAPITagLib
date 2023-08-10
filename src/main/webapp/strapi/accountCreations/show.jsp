@@ -23,6 +23,8 @@
 			<th>PublishedAt</th>
 			<th>CreatedById</th>
 			<th>UpdatedById</th>
+			<th>BeforeStartingHeader</th>
+			<th>BeforeStartingBlock</th>
 			</tr>
 			<tr>
 				<td><a href="edit.jsp?ID=<strapi:accountCreationsID />"><strapi:accountCreationsID /></a></td>
@@ -33,6 +35,8 @@
 				<td><strapi:accountCreationsPublishedAt /></td>
 				<td><strapi:accountCreationsCreatedById /></td>
 				<td><strapi:accountCreationsUpdatedById /></td>
+				<td><strapi:accountCreationsBeforeStartingHeader /></td>
+				<td><strapi:accountCreationsBeforeStartingBlock /></td>
 			</tr>
 		</table>
 

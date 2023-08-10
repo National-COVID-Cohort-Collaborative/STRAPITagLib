@@ -2,6 +2,7 @@
 <ul>
     <li><a href="<util:applicationRoot/>/index.jsp">Home</a></li>
     <li><a href="<util:applicationRoot/>/abouts/list.jsp" />Abouts list</a></li>
+    <li><a href="<util:applicationRoot/>/accountChecklists/list.jsp" />AccountChecklists list</a></li>
     <li><a href="<util:applicationRoot/>/accountCreations/list.jsp" />AccountCreations list</a></li>
     <li><a href="<util:applicationRoot/>/accountCreationsInstructionsLinks/list.jsp" />AccountCreationsInstructionsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/accountCreationsIntroLinks/list.jsp" />AccountCreationsIntroLinks list</a></li>

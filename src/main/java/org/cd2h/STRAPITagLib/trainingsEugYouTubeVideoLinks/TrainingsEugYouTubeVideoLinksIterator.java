@@ -29,6 +29,9 @@ public class TrainingsEugYouTubeVideoLinksIterator extends STRAPITagLibBodyTagSu
 
     PreparedStatement stat = null;
     ResultSet rs = null;
+    String fromList = null;
+    String joinCriteria = null;
+    String filterCriteria = null;
     String sortCriteria = null;
     int limitCriteria = 0;
     String var = null;
@@ -164,6 +167,7 @@ public class TrainingsEugYouTubeVideoLinksIterator extends STRAPITagLibBodyTagSu
             int webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT count(*) from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (trainingId == 0 ? "" : " and training_id = ?")
                                                         + (youTubeVideoId == 0 ? "" : " and you_tube_video_id = ?")
                                                         + generateLimitCriteria());
@@ -180,6 +184,7 @@ public class TrainingsEugYouTubeVideoLinksIterator extends STRAPITagLibBodyTagSu
             webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT strapi.trainings_eug_you_tube_video_links.id from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
+                                                        + generateFilterCriteria()
                                                         + (trainingId == 0 ? "" : " and training_id = ?")
                                                         + (youTubeVideoId == 0 ? "" : " and you_tube_video_id = ?")
                                                         + " order by " + generateSortCriteria()  +  generateLimitCriteria());
@@ -232,6 +237,14 @@ public class TrainingsEugYouTubeVideoLinksIterator extends STRAPITagLibBodyTagSu
           theBuffer.append(" and strapi.you_tube_videos.id = strapi.trainings_eug_you_tube_video_links.you_tube_video_id");
 
       return theBuffer.toString();
+    }
+
+    private String generateFilterCriteria() {
+        if (filterCriteria != null) {
+            return " and " + filterCriteria;
+        } else {
+            return "";
+        }
     }
 
     private String generateSortCriteria() {
@@ -346,6 +359,30 @@ public class TrainingsEugYouTubeVideoLinksIterator extends STRAPITagLibBodyTagSu
         this.sortCriteria = null;
         this.var = null;
         this.rsCount = 0;
+    }
+
+    public String getFromList() {
+        return fromList;
+    }
+
+    public void setFromList(String fromList) {
+        this.fromList = fromList;
+    }
+
+    public String getJoinCriteria() {
+        return joinCriteria;
+    }
+
+    public void setJoinCriteria(String joinCriteria) {
+        this.joinCriteria = joinCriteria;
+    }
+
+    public String getFilterCriteria() {
+        return filterCriteria;
+    }
+
+    public void setFilterCriteria(String filterCriteria) {
+        this.filterCriteria = filterCriteria;
     }
 
     public String getSortCriteria() {

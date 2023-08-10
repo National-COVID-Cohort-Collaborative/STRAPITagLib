@@ -36,6 +36,8 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 	Timestamp publishedAt = null;
 	int createdById = 0;
 	int updatedById = 0;
+	String beforeStartingHeader = null;
+	String beforeStartingBlock = null;
 
 	private String var = null;
 
@@ -59,7 +61,7 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a AccountCreations from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select header,header_2,created_at,updated_at,published_at,created_by_id,updated_by_id from strapi.account_creations where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select header,header_2,created_at,updated_at,published_at,created_by_id,updated_by_id,before_starting_header,before_starting_block from strapi.account_creations where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -77,6 +79,10 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 						createdById = rs.getInt(6);
 					if (updatedById == 0)
 						updatedById = rs.getInt(7);
+					if (beforeStartingHeader == null)
+						beforeStartingHeader = rs.getString(8);
+					if (beforeStartingBlock == null)
+						beforeStartingBlock = rs.getString(9);
 					found = true;
 				}
 				stmt.close();
@@ -155,7 +161,7 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.account_creations set header = ?, header_2 = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.account_creations set header = ?, header_2 = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, before_starting_header = ?, before_starting_block = ? where id = ? ");
 				stmt.setString( 1, header );
 				stmt.setString( 2, header2 );
 				stmt.setTimestamp( 3, createdAt );
@@ -163,7 +169,9 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 				stmt.setTimestamp( 5, publishedAt );
 				stmt.setInt( 6, createdById );
 				stmt.setInt( 7, updatedById );
-				stmt.setInt(8,ID);
+				stmt.setString( 8, beforeStartingHeader );
+				stmt.setString( 9, beforeStartingBlock );
+				stmt.setInt(10,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -202,7 +210,13 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 		if (header2 == null){
 			header2 = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.account_creations(header,header_2,created_at,updated_at,published_at,created_by_id,updated_by_id) values (?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (beforeStartingHeader == null){
+			beforeStartingHeader = "";
+		}
+		if (beforeStartingBlock == null){
+			beforeStartingBlock = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.account_creations(header,header_2,created_at,updated_at,published_at,created_by_id,updated_by_id,before_starting_header,before_starting_block) values (?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setString(1,header);
 		stmt.setString(2,header2);
 		stmt.setTimestamp(3,createdAt);
@@ -210,6 +224,8 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 		stmt.setTimestamp(5,publishedAt);
 		stmt.setInt(6,createdById);
 		stmt.setInt(7,updatedById);
+		stmt.setString(8,beforeStartingHeader);
+		stmt.setString(9,beforeStartingBlock);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -349,6 +365,38 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 		return updatedById;
 	}
 
+	public String getBeforeStartingHeader () {
+		if (commitNeeded)
+			return "";
+		else
+			return beforeStartingHeader;
+	}
+
+	public void setBeforeStartingHeader (String beforeStartingHeader) {
+		this.beforeStartingHeader = beforeStartingHeader;
+		commitNeeded = true;
+	}
+
+	public String getActualBeforeStartingHeader () {
+		return beforeStartingHeader;
+	}
+
+	public String getBeforeStartingBlock () {
+		if (commitNeeded)
+			return "";
+		else
+			return beforeStartingBlock;
+	}
+
+	public void setBeforeStartingBlock (String beforeStartingBlock) {
+		this.beforeStartingBlock = beforeStartingBlock;
+		commitNeeded = true;
+	}
+
+	public String getActualBeforeStartingBlock () {
+		return beforeStartingBlock;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -425,6 +473,22 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String beforeStartingHeaderValue() throws JspException {
+		try {
+			return currentInstance.getBeforeStartingHeader();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function beforeStartingHeaderValue()");
+		}
+	}
+
+	public static String beforeStartingBlockValue() throws JspException {
+		try {
+			return currentInstance.getBeforeStartingBlock();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function beforeStartingBlockValue()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		header = null;
@@ -434,6 +498,8 @@ public class AccountCreations extends STRAPITagLibTagSupport {
 		publishedAt = null;
 		createdById = 0;
 		updatedById = 0;
+		beforeStartingHeader = null;
+		beforeStartingBlock = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();
