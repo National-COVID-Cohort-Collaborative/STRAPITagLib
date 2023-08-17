@@ -130,6 +130,34 @@
 							</value>
 						</property>
 						<property>
+							<name>model.source</name>
+							<value>clay</value>
+						</property>
+						<property>
+							<name>db.driver</name>
+							<value>org.postgresql.Driver</value>
+						</property>
+						<property>
+							<name>db.url</name>
+							<value>jdbc:postgresql://neuromancer.info-science.uiowa.edu/strapi</value>
+						</property>
+						<property>
+							<name>db.schema</name>
+							<value>strapi</value>
+						</property>
+						<property>
+							<name>db.username</name>
+							<value>eichmann</value>
+						</property>
+						<property>
+							<name>db.password</name>
+							<value>translational</value>
+						</property>
+						<property>
+							<name>db.ssl</name>
+							<value>false</value>
+						</property>
+						<property>
 							<name>clay.file</name>
 							<value>src/non-packaged-resources/Model.clay</value>
 						</property>

@@ -10162,6 +10162,30 @@
 	</tag>
 
 	<tag>
+		<name>landingPagesIntroduction</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPages.LandingPagesIntroduction</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>introduction</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>landingPagesResearchers</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPages.LandingPagesResearchers</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>researchers</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachLandingPagesDomainTeamsLinks</name>
 		<tag-class>org.cd2h.STRAPITagLib.landingPagesDomainTeamsLinks.LandingPagesDomainTeamsLinksIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -10283,6 +10307,133 @@
 
 		<attribute>
 			<name>domainTeamOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachLandingPagesTestimonialsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useLandingPages</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTestimonials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>landingPagesTestimonialsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteLandingPagesTestimonialsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>landingPagesTestimonialsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>landingPagesTestimonialsLinksLandingPageId</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksLandingPageId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>landingPageId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>landingPagesTestimonialsLinksTestimonialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksTestimonialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>testimonialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>landingPagesTestimonialsLinksTestimonialOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksTestimonialOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>testimonialOrder</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -18574,6 +18725,216 @@
 	</tag>
 
 	<tag>
+		<name>foreachTestimonials</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonials</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.Testimonials</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTestimonials</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsName</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsName</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsQuote</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsQuote</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>quote</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsAuthor</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsAuthor</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>author</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>testimonialsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachTools</name>
 		<tag-class>org.cd2h.STRAPITagLib.tools.ToolsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -22949,6 +23310,42 @@
 	</function>
 
 	<function>
+		<name>landingPagesTestimonialsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksIterator</function-class>
+		<function-signature>java.lang.String landingPagesTestimonialsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>landingPagesTestimonialsLinksCountByLandingPages</name>
+		<function-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksIterator</function-class>
+		<function-signature>java.lang.String landingPagesTestimonialsLinksCountByLandingPages(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>landingPagesHasLandingPagesTestimonialsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean landingPagesHasLandingPagesTestimonialsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>landingPagesTestimonialsLinksCountByTestimonials</name>
+		<function-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksIterator</function-class>
+		<function-signature>java.lang.String landingPagesTestimonialsLinksCountByTestimonials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>testimonialsHasLandingPagesTestimonialsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean testimonialsHasLandingPagesTestimonialsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>landingPagesTestimonialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks.LandingPagesTestimonialsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean landingPagesTestimonialsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
 		<name>leadershipsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.leaderships.LeadershipsIterator</function-class>
 		<function-signature>java.lang.String leadershipsCount()</function-signature>
@@ -24038,6 +24435,18 @@
 		<name>supportsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.supports.SupportsIterator</function-class>
 		<function-signature>java.lang.String supportsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>testimonialsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsIterator</function-class>
+		<function-signature>java.lang.String testimonialsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>testimonialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsIterator</function-class>
+		<function-signature>java.lang.String testimonialsExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>

@@ -1,4 +1,4 @@
-package org.cd2h.STRAPITagLib.landingPages;
+package org.cd2h.STRAPITagLib.testimonials;
 
 
 import java.sql.PreparedStatement;
@@ -16,19 +16,19 @@ import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
 import org.cd2h.STRAPITagLib.STRAPITagLibBodyTagSupport;
 
 @SuppressWarnings("serial")
-public class LandingPagesDeleter extends STRAPITagLibBodyTagSupport {
+public class TestimonialsDeleter extends STRAPITagLibBodyTagSupport {
     int ID = 0;
-    String welcome = null;
+    String name = null;
+    String quote = null;
+    String author = null;
     Timestamp createdAt = null;
     Timestamp updatedAt = null;
     Timestamp publishedAt = null;
     int createdById = 0;
     int updatedById = 0;
-    String introduction = null;
-    String researchers = null;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
-	private static final Logger log = LogManager.getLogger(LandingPagesDeleter.class);
+	private static final Logger log = LogManager.getLogger(TestimonialsDeleter.class);
 
 
     ResultSet rs = null;
@@ -42,14 +42,14 @@ public class LandingPagesDeleter extends STRAPITagLibBodyTagSupport {
         PreparedStatement stat;
         try {
             int webapp_keySeq = 1;
-            stat = getConnection().prepareStatement("DELETE from strapi.landing_pages where 1=1"
+            stat = getConnection().prepareStatement("DELETE from strapi.testimonials where 1=1"
                                                         + (ID == 0 ? "" : " and id = ? "));
             if (ID != 0) stat.setInt(webapp_keySeq++, ID);
             stat.execute();
 
 			webapp_keySeq = 1;
         } catch (SQLException e) {
-            log.error("JDBC error generating LandingPages deleter", e);
+            log.error("JDBC error generating Testimonials deleter", e);
 
 			clearServiceState();
 			freeConnection();
@@ -58,10 +58,10 @@ public class LandingPagesDeleter extends STRAPITagLibBodyTagSupport {
 			if(parent != null){
 				pageContext.setAttribute("tagError", true);
 				pageContext.setAttribute("tagErrorException", e);
-				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating LandingPages deleter");
+				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating Testimonials deleter");
 				return parent.doEndTag();
 			}else{
-				throw new JspException("Error: JDBC error generating LandingPages deleter",e);
+				throw new JspException("Error: JDBC error generating Testimonials deleter",e);
 			}
 
         } finally {

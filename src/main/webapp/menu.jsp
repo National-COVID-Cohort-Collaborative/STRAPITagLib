@@ -59,6 +59,7 @@
     <li><a href="<util:applicationRoot/>/institutionalEssentialsStepLinks/list.jsp" />InstitutionalEssentialsStepLinks list</a></li>
     <li><a href="<util:applicationRoot/>/landingPages/list.jsp" />LandingPages list</a></li>
     <li><a href="<util:applicationRoot/>/landingPagesDomainTeamsLinks/list.jsp" />LandingPagesDomainTeamsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/landingPagesTestimonialsLinks/list.jsp" />LandingPagesTestimonialsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/leaderships/list.jsp" />Leaderships list</a></li>
     <li><a href="<util:applicationRoot/>/leadershipsBioGroupsLinks/list.jsp" />LeadershipsBioGroupsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/liaisons/list.jsp" />Liaisons list</a></li>
@@ -106,6 +107,7 @@
     <li><a href="<util:applicationRoot/>/researcherEssentialsNavTilesLinks/list.jsp" />ResearcherEssentialsNavTilesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/resources/list.jsp" />Resources list</a></li>
     <li><a href="<util:applicationRoot/>/supports/list.jsp" />Supports list</a></li>
+    <li><a href="<util:applicationRoot/>/testimonials/list.jsp" />Testimonials list</a></li>
     <li><a href="<util:applicationRoot/>/tools/list.jsp" />Tools list</a></li>
     <li><a href="<util:applicationRoot/>/toolsDescriptionLinks/list.jsp" />ToolsDescriptionLinks list</a></li>
     <li><a href="<util:applicationRoot/>/toolsToolLinks/list.jsp" />ToolsToolLinks list</a></li>

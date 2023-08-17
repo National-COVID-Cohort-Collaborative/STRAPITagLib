@@ -15,9 +15,17 @@
                         <div class="col-xs-8">
 								<form action="add.jsp" method="post" >
 									<fieldset>
-										<legend>LandingPages</legend>
-										<label for="welcome">Welcome</label>
-										<input type="text" id="welcome" name="welcome" size="40" value="">
+										<legend>Testimonials</legend>
+										<label for="name">Name</label>
+										<input type="text" id="name" name="name" size="40" value="">
+										<br>
+
+										<label for="quote">Quote</label>
+										<input type="text" id="quote" name="quote" size="40" value="">
+										<br>
+
+										<label for="author">Author</label>
+										<input type="text" id="author" name="author" size="40" value="">
 										<br>
 
 										<label for="createdAt">CreatedAt</label>
@@ -40,14 +48,6 @@
 										<input type="text" id="updatedById" name="updatedById" size="40" value="">
 										<br>
 
-										<label for="introduction">Introduction</label>
-										<input type="text" id="introduction" name="introduction" size="40" value="">
-										<br>
-
-										<label for="researchers">Researchers</label>
-										<input type="text" id="researchers" name="researchers" size="40" value="">
-										<br>
-
 										<input type="submit" name="submit" value="Save">
 										<input type="submit" name="submit" value="Cancel">
 									</fieldset>
@@ -63,16 +63,16 @@
 		<c:redirect url="list.jsp" />
 	</c:when>
 	<c:when test="${param.submit eq 'Save'}">
-		<strapi:landingPages>
-			<strapi:landingPagesWelcome welcome = "${param.welcome}" />
-			<strapi:landingPagesCreatedAt createdAt = "${param.createdAt}" />
-			<strapi:landingPagesUpdatedAt updatedAt = "${param.updatedAt}" />
-			<strapi:landingPagesPublishedAt publishedAt = "${param.publishedAt}" />
-			<strapi:landingPagesCreatedById createdById = "${param.createdById}" />
-			<strapi:landingPagesUpdatedById updatedById = "${param.updatedById}" />
-			<strapi:landingPagesIntroduction introduction = "${param.introduction}" />
-			<strapi:landingPagesResearchers researchers = "${param.researchers}" />
-		</strapi:landingPages>
+		<strapi:testimonials>
+			<strapi:testimonialsName name = "${param.name}" />
+			<strapi:testimonialsQuote quote = "${param.quote}" />
+			<strapi:testimonialsAuthor author = "${param.author}" />
+			<strapi:testimonialsCreatedAt createdAt = "${param.createdAt}" />
+			<strapi:testimonialsUpdatedAt updatedAt = "${param.updatedAt}" />
+			<strapi:testimonialsPublishedAt publishedAt = "${param.publishedAt}" />
+			<strapi:testimonialsCreatedById createdById = "${param.createdById}" />
+			<strapi:testimonialsUpdatedById updatedById = "${param.updatedById}" />
+		</strapi:testimonials>
 		<c:redirect url="list.jsp" />
 	</c:when>
 	<c:otherwise>

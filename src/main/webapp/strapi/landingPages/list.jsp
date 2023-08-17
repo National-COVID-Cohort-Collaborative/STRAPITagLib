@@ -22,6 +22,8 @@
 									<th>PublishedAt</th>
 									<th>CreatedById</th>
 									<th>UpdatedById</th>
+									<th>Introduction</th>
+									<th>Researchers</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -36,6 +38,8 @@
 											<td><strapi:landingPagesPublishedAt /></td>
 											<td><strapi:landingPagesCreatedById /></td>
 											<td><strapi:landingPagesUpdatedById /></td>
+											<td><strapi:landingPagesIntroduction /></td>
+											<td><strapi:landingPagesResearchers /></td>
 											<td><a href="../landingPages/edit.jsp?ID=<strapi:landingPagesID />">edit</a></td>
 											<td><a href="../landingPages/delete.jsp?ID=<strapi:landingPagesID />">delete</a></td>
 										</tr>
@@ -60,6 +64,8 @@
 		<strapi:landingPagesPublishedAt />
 		<strapi:landingPagesCreatedById />
 		<strapi:landingPagesUpdatedById />
+		<strapi:landingPagesIntroduction />
+		<strapi:landingPagesResearchers />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:landingPages>
 			</strapi:foreachLandingPages>
                 </div>

@@ -1,4 +1,4 @@
-package org.cd2h.STRAPITagLib.landingPages;
+package org.cd2h.STRAPITagLib.landingPagesTestimonialsLinks;
 
 
 import java.sql.PreparedStatement;
@@ -7,28 +7,24 @@ import java.sql.SQLException;
 import java.util.Vector;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import java.sql.Timestamp;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.Tag;
 
 import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
 import org.cd2h.STRAPITagLib.STRAPITagLibBodyTagSupport;
+import org.cd2h.STRAPITagLib.landingPages.LandingPages;
+import org.cd2h.STRAPITagLib.testimonials.Testimonials;
 
 @SuppressWarnings("serial")
-public class LandingPagesDeleter extends STRAPITagLibBodyTagSupport {
+public class LandingPagesTestimonialsLinksDeleter extends STRAPITagLibBodyTagSupport {
     int ID = 0;
-    String welcome = null;
-    Timestamp createdAt = null;
-    Timestamp updatedAt = null;
-    Timestamp publishedAt = null;
-    int createdById = 0;
-    int updatedById = 0;
-    String introduction = null;
-    String researchers = null;
+    int landingPageId = 0;
+    int testimonialId = 0;
+    double testimonialOrder = 0.0;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
-	private static final Logger log = LogManager.getLogger(LandingPagesDeleter.class);
+	private static final Logger log = LogManager.getLogger(LandingPagesTestimonialsLinksDeleter.class);
 
 
     ResultSet rs = null;
@@ -36,20 +32,38 @@ public class LandingPagesDeleter extends STRAPITagLibBodyTagSupport {
     int rsCount = 0;
 
     public int doStartTag() throws JspException {
+		LandingPages theLandingPages = (LandingPages)findAncestorWithClass(this, LandingPages.class);
+		if (theLandingPages!= null)
+			parentEntities.addElement(theLandingPages);
+		Testimonials theTestimonials = (Testimonials)findAncestorWithClass(this, Testimonials.class);
+		if (theTestimonials!= null)
+			parentEntities.addElement(theTestimonials);
 
+		if (theLandingPages == null) {
+		} else {
+			landingPageId = theLandingPages.getID();
+		}
+		if (theTestimonials == null) {
+		} else {
+			testimonialId = theTestimonials.getID();
+		}
 
 
         PreparedStatement stat;
         try {
             int webapp_keySeq = 1;
-            stat = getConnection().prepareStatement("DELETE from strapi.landing_pages where 1=1"
-                                                        + (ID == 0 ? "" : " and id = ? "));
+            stat = getConnection().prepareStatement("DELETE from strapi.landing_pages_testimonials_links where 1=1"
+                                                        + (ID == 0 ? "" : " and id = ? ")
+                                                        + (landingPageId == 0 ? "" : " and landing_page_id = ? ")
+                                                        + (testimonialId == 0 ? "" : " and testimonial_id = ? "));
             if (ID != 0) stat.setInt(webapp_keySeq++, ID);
+			if (landingPageId != 0) stat.setInt(webapp_keySeq++, landingPageId);
+			if (testimonialId != 0) stat.setInt(webapp_keySeq++, testimonialId);
             stat.execute();
 
 			webapp_keySeq = 1;
         } catch (SQLException e) {
-            log.error("JDBC error generating LandingPages deleter", e);
+            log.error("JDBC error generating LandingPagesTestimonialsLinks deleter", e);
 
 			clearServiceState();
 			freeConnection();
@@ -58,10 +72,10 @@ public class LandingPagesDeleter extends STRAPITagLibBodyTagSupport {
 			if(parent != null){
 				pageContext.setAttribute("tagError", true);
 				pageContext.setAttribute("tagErrorException", e);
-				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating LandingPages deleter");
+				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating LandingPagesTestimonialsLinks deleter");
 				return parent.doEndTag();
 			}else{
-				throw new JspException("Error: JDBC error generating LandingPages deleter",e);
+				throw new JspException("Error: JDBC error generating LandingPagesTestimonialsLinks deleter",e);
 			}
 
         } finally {

@@ -1,4 +1,4 @@
-package org.cd2h.STRAPITagLib.landingPages;
+package org.cd2h.STRAPITagLib.testimonials;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,68 +18,68 @@ import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
 import org.cd2h.STRAPITagLib.Sequence;
 
 @SuppressWarnings("serial")
-public class LandingPages extends STRAPITagLibTagSupport {
+public class Testimonials extends STRAPITagLibTagSupport {
 
-	static LandingPages currentInstance = null;
+	static Testimonials currentInstance = null;
 	boolean commitNeeded = false;
 	boolean newRecord = false;
 
-	private static final Logger log = LogManager.getLogger(LandingPages.class);
+	private static final Logger log = LogManager.getLogger(Testimonials.class);
 
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
 	int ID = 0;
-	String welcome = null;
+	String name = null;
+	String quote = null;
+	String author = null;
 	Timestamp createdAt = null;
 	Timestamp updatedAt = null;
 	Timestamp publishedAt = null;
 	int createdById = 0;
 	int updatedById = 0;
-	String introduction = null;
-	String researchers = null;
 
 	private String var = null;
 
-	private LandingPages cachedLandingPages = null;
+	private Testimonials cachedTestimonials = null;
 
 	public int doStartTag() throws JspException {
 		currentInstance = this;
 		try {
 
 
-			LandingPagesIterator theLandingPagesIterator = (LandingPagesIterator)findAncestorWithClass(this, LandingPagesIterator.class);
+			TestimonialsIterator theTestimonialsIterator = (TestimonialsIterator)findAncestorWithClass(this, TestimonialsIterator.class);
 
-			if (theLandingPagesIterator != null) {
-				ID = theLandingPagesIterator.getID();
+			if (theTestimonialsIterator != null) {
+				ID = theTestimonialsIterator.getID();
 			}
 
-			if (theLandingPagesIterator == null && ID == 0) {
-				// no ID was provided - the default is to assume that it is a new LandingPages and to generate a new ID
+			if (theTestimonialsIterator == null && ID == 0) {
+				// no ID was provided - the default is to assume that it is a new Testimonials and to generate a new ID
 				ID = Sequence.generateID();
 				insertEntity();
 			} else {
-				// an iterator or ID was provided as an attribute - we need to load a LandingPages from the database
+				// an iterator or ID was provided as an attribute - we need to load a Testimonials from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select welcome,created_at,updated_at,published_at,created_by_id,updated_by_id,introduction,researchers from strapi.landing_pages where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select name,quote,author,created_at,updated_at,published_at,created_by_id,updated_by_id from strapi.testimonials where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
-					if (welcome == null)
-						welcome = rs.getString(1);
+					if (name == null)
+						name = rs.getString(1);
+					if (quote == null)
+						quote = rs.getString(2);
+					if (author == null)
+						author = rs.getString(3);
 					if (createdAt == null)
-						createdAt = rs.getTimestamp(2);
+						createdAt = rs.getTimestamp(4);
 					if (updatedAt == null)
-						updatedAt = rs.getTimestamp(3);
+						updatedAt = rs.getTimestamp(5);
 					if (publishedAt == null)
-						publishedAt = rs.getTimestamp(4);
+						publishedAt = rs.getTimestamp(6);
 					if (createdById == 0)
-						createdById = rs.getInt(5);
+						createdById = rs.getInt(7);
 					if (updatedById == 0)
-						updatedById = rs.getInt(6);
-					if (introduction == null)
-						introduction = rs.getString(7);
-					if (researchers == null)
-						researchers = rs.getString(8);
+						updatedById = rs.getInt(8);
 					found = true;
 				}
 				stmt.close();
@@ -109,12 +109,12 @@ public class LandingPages extends STRAPITagLibTagSupport {
 		}
 
 		if(pageContext != null){
-			LandingPages currentLandingPages = (LandingPages) pageContext.getAttribute("tag_landingPages");
-			if(currentLandingPages != null){
-				cachedLandingPages = currentLandingPages;
+			Testimonials currentTestimonials = (Testimonials) pageContext.getAttribute("tag_testimonials");
+			if(currentTestimonials != null){
+				cachedTestimonials = currentTestimonials;
 			}
-			currentLandingPages = this;
-			pageContext.setAttribute((var == null ? "tag_landingPages" : var), currentLandingPages);
+			currentTestimonials = this;
+			pageContext.setAttribute((var == null ? "tag_testimonials" : var), currentTestimonials);
 		}
 
 		return EVAL_PAGE;
@@ -124,11 +124,11 @@ public class LandingPages extends STRAPITagLibTagSupport {
 		currentInstance = null;
 
 		if(pageContext != null){
-			if(this.cachedLandingPages != null){
-				pageContext.setAttribute((var == null ? "tag_landingPages" : var), this.cachedLandingPages);
+			if(this.cachedTestimonials != null){
+				pageContext.setAttribute((var == null ? "tag_testimonials" : var), this.cachedTestimonials);
 			}else{
-				pageContext.removeAttribute((var == null ? "tag_landingPages" : var));
-				this.cachedLandingPages = null;
+				pageContext.removeAttribute((var == null ? "tag_testimonials" : var));
+				this.cachedTestimonials = null;
 			}
 		}
 
@@ -158,15 +158,15 @@ public class LandingPages extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.landing_pages set welcome = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, introduction = ?, researchers = ? where id = ? ");
-				stmt.setString( 1, welcome );
-				stmt.setTimestamp( 2, createdAt );
-				stmt.setTimestamp( 3, updatedAt );
-				stmt.setTimestamp( 4, publishedAt );
-				stmt.setInt( 5, createdById );
-				stmt.setInt( 6, updatedById );
-				stmt.setString( 7, introduction );
-				stmt.setString( 8, researchers );
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.testimonials set name = ?, quote = ?, author = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ? where id = ? ");
+				stmt.setString( 1, name );
+				stmt.setString( 2, quote );
+				stmt.setString( 3, author );
+				stmt.setTimestamp( 4, createdAt );
+				stmt.setTimestamp( 5, updatedAt );
+				stmt.setTimestamp( 6, publishedAt );
+				stmt.setInt( 7, createdById );
+				stmt.setInt( 8, updatedById );
 				stmt.setInt(9,ID);
 				stmt.executeUpdate();
 				stmt.close();
@@ -197,27 +197,27 @@ public class LandingPages extends STRAPITagLibTagSupport {
 	public void insertEntity() throws JspException, SQLException {
 		if (ID == 0) {
 			ID = Sequence.generateID();
-			log.debug("generating new LandingPages " + ID);
+			log.debug("generating new Testimonials " + ID);
 		}
 
-		if (welcome == null){
-			welcome = "";
+		if (name == null){
+			name = "";
 		}
-		if (introduction == null){
-			introduction = "";
+		if (quote == null){
+			quote = "";
 		}
-		if (researchers == null){
-			researchers = "";
+		if (author == null){
+			author = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.landing_pages(welcome,created_at,updated_at,published_at,created_by_id,updated_by_id,introduction,researchers) values (?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
-		stmt.setString(1,welcome);
-		stmt.setTimestamp(2,createdAt);
-		stmt.setTimestamp(3,updatedAt);
-		stmt.setTimestamp(4,publishedAt);
-		stmt.setInt(5,createdById);
-		stmt.setInt(6,updatedById);
-		stmt.setString(7,introduction);
-		stmt.setString(8,researchers);
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.testimonials(name,quote,author,created_at,updated_at,published_at,created_by_id,updated_by_id) values (?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		stmt.setString(1,name);
+		stmt.setString(2,quote);
+		stmt.setString(3,author);
+		stmt.setTimestamp(4,createdAt);
+		stmt.setTimestamp(5,updatedAt);
+		stmt.setTimestamp(6,publishedAt);
+		stmt.setInt(7,createdById);
+		stmt.setInt(8,updatedById);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -228,7 +228,7 @@ public class LandingPages extends STRAPITagLibTagSupport {
 
 		stmt.close();
 
-		log.debug("generating new LandingPages " + ID);
+		log.debug("generating new Testimonials " + ID);
 
 		freeConnection();
 	}
@@ -245,20 +245,52 @@ public class LandingPages extends STRAPITagLibTagSupport {
 		return ID;
 	}
 
-	public String getWelcome () {
+	public String getName () {
 		if (commitNeeded)
 			return "";
 		else
-			return welcome;
+			return name;
 	}
 
-	public void setWelcome (String welcome) {
-		this.welcome = welcome;
+	public void setName (String name) {
+		this.name = name;
 		commitNeeded = true;
 	}
 
-	public String getActualWelcome () {
-		return welcome;
+	public String getActualName () {
+		return name;
+	}
+
+	public String getQuote () {
+		if (commitNeeded)
+			return "";
+		else
+			return quote;
+	}
+
+	public void setQuote (String quote) {
+		this.quote = quote;
+		commitNeeded = true;
+	}
+
+	public String getActualQuote () {
+		return quote;
+	}
+
+	public String getAuthor () {
+		if (commitNeeded)
+			return "";
+		else
+			return author;
+	}
+
+	public void setAuthor (String author) {
+		this.author = author;
+		commitNeeded = true;
+	}
+
+	public String getActualAuthor () {
+		return author;
 	}
 
 	public Timestamp getCreatedAt () {
@@ -341,38 +373,6 @@ public class LandingPages extends STRAPITagLibTagSupport {
 		return updatedById;
 	}
 
-	public String getIntroduction () {
-		if (commitNeeded)
-			return "";
-		else
-			return introduction;
-	}
-
-	public void setIntroduction (String introduction) {
-		this.introduction = introduction;
-		commitNeeded = true;
-	}
-
-	public String getActualIntroduction () {
-		return introduction;
-	}
-
-	public String getResearchers () {
-		if (commitNeeded)
-			return "";
-		else
-			return researchers;
-	}
-
-	public void setResearchers (String researchers) {
-		this.researchers = researchers;
-		commitNeeded = true;
-	}
-
-	public String getActualResearchers () {
-		return researchers;
-	}
-
 	public String getVar () {
 		return var;
 	}
@@ -393,11 +393,27 @@ public class LandingPages extends STRAPITagLibTagSupport {
 		}
 	}
 
-	public static String welcomeValue() throws JspException {
+	public static String nameValue() throws JspException {
 		try {
-			return currentInstance.getWelcome();
+			return currentInstance.getName();
 		} catch (Exception e) {
-			 throw new JspTagException("Error in tag function welcomeValue()");
+			 throw new JspTagException("Error in tag function nameValue()");
+		}
+	}
+
+	public static String quoteValue() throws JspException {
+		try {
+			return currentInstance.getQuote();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function quoteValue()");
+		}
+	}
+
+	public static String authorValue() throws JspException {
+		try {
+			return currentInstance.getAuthor();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function authorValue()");
 		}
 	}
 
@@ -441,32 +457,16 @@ public class LandingPages extends STRAPITagLibTagSupport {
 		}
 	}
 
-	public static String introductionValue() throws JspException {
-		try {
-			return currentInstance.getIntroduction();
-		} catch (Exception e) {
-			 throw new JspTagException("Error in tag function introductionValue()");
-		}
-	}
-
-	public static String researchersValue() throws JspException {
-		try {
-			return currentInstance.getResearchers();
-		} catch (Exception e) {
-			 throw new JspTagException("Error in tag function researchersValue()");
-		}
-	}
-
 	private void clearServiceState () {
 		ID = 0;
-		welcome = null;
+		name = null;
+		quote = null;
+		author = null;
 		createdAt = null;
 		updatedAt = null;
 		publishedAt = null;
 		createdById = 0;
 		updatedById = 0;
-		introduction = null;
-		researchers = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();

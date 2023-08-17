@@ -42,6 +42,14 @@
 											<input type="text" id="updatedById" name="updatedById" size="40" value="<strapi:landingPagesUpdatedById />">
 											<br>
 
+											<label for="introduction">Introduction</label>
+											<input type="text" id="introduction" name="introduction" size="40" value="<strapi:landingPagesIntroduction />">
+											<br>
+
+											<label for="researchers">Researchers</label>
+											<input type="text" id="researchers" name="researchers" size="40" value="<strapi:landingPagesResearchers />">
+											<br>
+
 											<input type="submit" name="submit" value="Save">
 											<input type="submit" name="submit" value="Cancel">
 											<input type="hidden" name="ID" value="${param.ID}">
@@ -69,6 +77,8 @@
 			<strapi:landingPagesPublishedAt publishedAt = "${param.publishedAt}" />
 			<strapi:landingPagesCreatedById createdById = "${param.createdById}" />
 			<strapi:landingPagesUpdatedById updatedById = "${param.updatedById}" />
+			<strapi:landingPagesIntroduction introduction = "${param.introduction}" />
+			<strapi:landingPagesResearchers researchers = "${param.researchers}" />
 		</strapi:landingPages>
 		<c:redirect url="list.jsp" />
 	</c:when>
