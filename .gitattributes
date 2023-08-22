@@ -269,6 +269,13 @@ src/main/java/org/cd2h/STRAPITagLib/domainTeamsLeadsLinks/DomainTeamsLeadsLinksD
 src/main/java/org/cd2h/STRAPITagLib/domainTeamsLeadsLinks/DomainTeamsLeadsLinksDomainTeamOrder.java -text
 src/main/java/org/cd2h/STRAPITagLib/domainTeamsLeadsLinks/DomainTeamsLeadsLinksID.java -text
 src/main/java/org/cd2h/STRAPITagLib/domainTeamsLeadsLinks/DomainTeamsLeadsLinksIterator.java -text
+src/main/java/org/cd2h/STRAPITagLib/domainTeamsYouTubeVideosLinks/DomainTeamsYouTubeVideosLinks.java -text
+src/main/java/org/cd2h/STRAPITagLib/domainTeamsYouTubeVideosLinks/DomainTeamsYouTubeVideosLinksDeleter.java -text
+src/main/java/org/cd2h/STRAPITagLib/domainTeamsYouTubeVideosLinks/DomainTeamsYouTubeVideosLinksDomainTeamId.java -text
+src/main/java/org/cd2h/STRAPITagLib/domainTeamsYouTubeVideosLinks/DomainTeamsYouTubeVideosLinksID.java -text
+src/main/java/org/cd2h/STRAPITagLib/domainTeamsYouTubeVideosLinks/DomainTeamsYouTubeVideosLinksIterator.java -text
+src/main/java/org/cd2h/STRAPITagLib/domainTeamsYouTubeVideosLinks/DomainTeamsYouTubeVideosLinksYouTubeVideoId.java -text
+src/main/java/org/cd2h/STRAPITagLib/domainTeamsYouTubeVideosLinks/DomainTeamsYouTubeVideosLinksYouTubeVideoOrder.java -text
 src/main/java/org/cd2h/STRAPITagLib/domains/Domains.java -text
 src/main/java/org/cd2h/STRAPITagLib/domains/DomainsBlock1.java -text
 src/main/java/org/cd2h/STRAPITagLib/domains/DomainsBlock2.java -text
@@ -1637,6 +1644,11 @@ src/main/webapp/domainTeamsLeadsLinks/delete.jsp -text
 src/main/webapp/domainTeamsLeadsLinks/edit.jsp -text
 src/main/webapp/domainTeamsLeadsLinks/list.jsp -text
 src/main/webapp/domainTeamsLeadsLinks/show.jsp -text
+src/main/webapp/domainTeamsYouTubeVideosLinks/add.jsp -text
+src/main/webapp/domainTeamsYouTubeVideosLinks/delete.jsp -text
+src/main/webapp/domainTeamsYouTubeVideosLinks/edit.jsp -text
+src/main/webapp/domainTeamsYouTubeVideosLinks/list.jsp -text
+src/main/webapp/domainTeamsYouTubeVideosLinks/show.jsp -text
 src/main/webapp/domains/add.jsp -text
 src/main/webapp/domains/delete.jsp -text
 src/main/webapp/domains/edit.jsp -text

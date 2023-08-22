@@ -20,6 +20,7 @@
     <li><a href="<util:applicationRoot/>/contributors/list.jsp" />Contributors list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeams/list.jsp" />DomainTeams list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeamsLeadsLinks/list.jsp" />DomainTeamsLeadsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/domainTeamsYouTubeVideosLinks/list.jsp" />DomainTeamsYouTubeVideosLinks list</a></li>
     <li><a href="<util:applicationRoot/>/domains/list.jsp" />Domains list</a></li>
     <li><a href="<util:applicationRoot/>/domainsCrossCuttingTeamsLinks/list.jsp" />DomainsCrossCuttingTeamsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/domainsDomainTeamsLinks/list.jsp" />DomainsDomainTeamsLinks list</a></li>

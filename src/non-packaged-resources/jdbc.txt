@@ -180,6 +180,7 @@ database: strapitaglib	uid: null
 			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: DomainTeams	uid: null
 			child DomainTeamsLeadsLinks
+			child DomainTeamsYouTubeVideosLinks
 			child DomainsCrossCuttingTeamsLinks
 			child DomainsDomainTeamsLinks
 			child LandingPagesDomainTeamsLinks
@@ -207,6 +208,11 @@ database: strapitaglib	uid: null
 			attribute: bioId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: bioOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: domainTeamOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: DomainTeamsYouTubeVideosLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: domainTeamId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: youTubeVideoId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: youTubeVideoOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: Domains	uid: null
 			child DomainsCrossCuttingTeamsLinks
 			child DomainsDomainTeamsLinks
@@ -1177,6 +1183,7 @@ database: strapitaglib	uid: null
 			attribute: workstreamId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: youTubeVideoId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: YouTubeVideos	uid: null
+			child DomainTeamsYouTubeVideosLinks
 			child ExternalDatasetsYouTubeVideoLinks
 			child PresentationsYouTubeVideosLinks
 			child TrainingsEugYouTubeVideoLinks
@@ -1226,6 +1233,7 @@ database: strapitaglib	uid: null
 		source entity: ContentImageBlockRights	target entity: ToolsToolLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: WorkstreamsIntroLinks	uid: null
 		source entity: DomainTeams	target entity: DomainTeamsLeadsLinks	uid: null
+		source entity: DomainTeams	target entity: DomainTeamsYouTubeVideosLinks	uid: null
 		source entity: DomainTeams	target entity: DomainsCrossCuttingTeamsLinks	uid: null
 		source entity: DomainTeams	target entity: DomainsDomainTeamsLinks	uid: null
 		source entity: DomainTeams	target entity: LandingPagesDomainTeamsLinks	uid: null
@@ -1330,6 +1338,7 @@ database: strapitaglib	uid: null
 		source entity: Workstreams	target entity: WorkstreamsIntroLinks	uid: null
 		source entity: Workstreams	target entity: WorkstreamsNavTilesLinks	uid: null
 		source entity: Workstreams	target entity: WorkstreamsYouTubeVideoLinks	uid: null
+		source entity: YouTubeVideos	target entity: DomainTeamsYouTubeVideosLinks	uid: null
 		source entity: YouTubeVideos	target entity: ExternalDatasetsYouTubeVideoLinks	uid: null
 		source entity: YouTubeVideos	target entity: PresentationsYouTubeVideosLinks	uid: null
 		source entity: YouTubeVideos	target entity: TrainingsEugYouTubeVideoLinks	uid: null
