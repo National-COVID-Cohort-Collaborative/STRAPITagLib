@@ -131,7 +131,7 @@
 						</property>
 						<property>
 							<name>model.source</name>
-							<value>clay</value>
+							<value>jdbc</value>
 						</property>
 						<property>
 							<name>db.driver</name>

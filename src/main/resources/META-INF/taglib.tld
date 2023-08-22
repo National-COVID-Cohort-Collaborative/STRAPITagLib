@@ -18725,6 +18725,1074 @@
 	</tag>
 
 	<tag>
+		<name>foreachTeamCreations</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreations</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreations</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTeamCreations</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsReadyHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsReadyHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>readyHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsReadyBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsReadyBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>readyBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsLeadHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsLeadHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>leadHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsLeadBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsLeadBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>leadBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResponsibilityHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsResponsibilityHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>responsibilityHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResponsibilityBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsResponsibilityBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>responsibilityBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResourcesHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsResourcesHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>resourcesHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResourcesBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsResourcesBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>resourcesBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsGuidelineHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsGuidelineHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>guidelineHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsGuidelineBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsGuidelineBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>guidelineBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsTitle</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsTitle</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTeamCreationsGuidelineFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTeamCreations</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>teamCreationsGuidelineFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTeamCreationsGuidelineFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsGuidelineFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsGuidelineFaqsLinksTeamCreationId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksTeamCreationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>teamCreationId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsGuidelineFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsGuidelineFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTeamCreationsLeadFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTeamCreations</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>teamCreationsLeadFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTeamCreationsLeadFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsLeadFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsLeadFaqsLinksTeamCreationId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksTeamCreationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>teamCreationId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsLeadFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsLeadFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTeamCreationsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useNavTiles</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTeamCreations</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>teamCreationsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTeamCreationsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsNavTilesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsNavTilesLinksTeamCreationId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksTeamCreationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>teamCreationId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsNavTilesLinksNavTileId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksNavTileId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navTileId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsNavTilesLinksNavTileOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksNavTileOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navTileOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTeamCreationsReadyFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTeamCreations</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>teamCreationsReadyFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTeamCreationsReadyFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsReadyFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsReadyFaqsLinksTeamCreationId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksTeamCreationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>teamCreationId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsReadyFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsReadyFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTeamCreationsResourcesFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTeamCreations</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>teamCreationsResourcesFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTeamCreationsResourcesFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResourcesFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResourcesFaqsLinksTeamCreationId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksTeamCreationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>teamCreationId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResourcesFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResourcesFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTeamCreationsResponsibilityFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTeamCreations</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>teamCreationsResponsibilityFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTeamCreationsResponsibilityFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResponsibilityFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResponsibilityFaqsLinksTeamCreationId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksTeamCreationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>teamCreationId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResponsibilityFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>teamCreationsResponsibilityFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachTestimonials</name>
 		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -24435,6 +25503,210 @@
 		<name>supportsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.supports.SupportsIterator</function-class>
 		<function-signature>java.lang.String supportsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsIterator</function-class>
+		<function-signature>java.lang.String teamCreationsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreations.TeamCreationsIterator</function-class>
+		<function-signature>java.lang.String teamCreationsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsGuidelineFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsGuidelineFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsGuidelineFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsGuidelineFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasTeamCreationsGuidelineFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasTeamCreationsGuidelineFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsGuidelineFaqsLinksCountByTeamCreations</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsGuidelineFaqsLinksCountByTeamCreations(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsHasTeamCreationsGuidelineFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean teamCreationsHasTeamCreationsGuidelineFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsTeamCreationsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsGuidelineFaqsLinks.TeamCreationsGuidelineFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsTeamCreationsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsLeadFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsLeadFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsLeadFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsLeadFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasTeamCreationsLeadFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasTeamCreationsLeadFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsLeadFaqsLinksCountByTeamCreations</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsLeadFaqsLinksCountByTeamCreations(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsHasTeamCreationsLeadFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsLeadFaqsLinks.TeamCreationsLeadFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean teamCreationsHasTeamCreationsLeadFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsNavTilesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsNavTilesLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsNavTilesLinksCountByNavTiles</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsNavTilesLinksCountByNavTiles(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navTilesHasTeamCreationsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesHasTeamCreationsNavTilesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsNavTilesLinksCountByTeamCreations</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsNavTilesLinksCountByTeamCreations(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsHasTeamCreationsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean teamCreationsHasTeamCreationsNavTilesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navTilesTeamCreationsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsNavTilesLinks.TeamCreationsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesTeamCreationsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsReadyFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsReadyFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsReadyFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsReadyFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasTeamCreationsReadyFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasTeamCreationsReadyFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsReadyFaqsLinksCountByTeamCreations</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsReadyFaqsLinksCountByTeamCreations(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsHasTeamCreationsReadyFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsReadyFaqsLinks.TeamCreationsReadyFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean teamCreationsHasTeamCreationsReadyFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsResourcesFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsResourcesFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsResourcesFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsResourcesFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasTeamCreationsResourcesFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasTeamCreationsResourcesFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsResourcesFaqsLinksCountByTeamCreations</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsResourcesFaqsLinksCountByTeamCreations(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsHasTeamCreationsResourcesFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResourcesFaqsLinks.TeamCreationsResourcesFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean teamCreationsHasTeamCreationsResourcesFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsResponsibilityFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsResponsibilityFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsResponsibilityFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsResponsibilityFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasTeamCreationsResponsibilityFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasTeamCreationsResponsibilityFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsResponsibilityFaqsLinksCountByTeamCreations</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String teamCreationsResponsibilityFaqsLinksCountByTeamCreations(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>teamCreationsHasTeamCreationsResponsibilityFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean teamCreationsHasTeamCreationsResponsibilityFaqsLinks(java.lang.String)</function-signature>
 	</function>
 
 	<function>

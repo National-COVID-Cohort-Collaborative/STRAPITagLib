@@ -200,19 +200,28 @@ public class FilesRelatedMorphs extends STRAPITagLibTagSupport {
 		if (field == null){
 			field = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.files_related_morphs(id,file_id,related_id,related_type,field,order) values (?,?,?,?,?,?)");
-		stmt.setInt(1,ID);
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.files_related_morphs(file_id,related_id,related_type,field,order) values (?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		if (fileId == 0) {
-			stmt.setNull(2, java.sql.Types.INTEGER);
+			stmt.setNull(1, java.sql.Types.INTEGER);
 		} else {
-			stmt.setInt(2,fileId);
+			stmt.setInt(1,fileId);
 		}
-		stmt.setInt(3,relatedId);
-		stmt.setString(4,relatedType);
-		stmt.setString(5,field);
-		stmt.setDouble(6,order);
+		stmt.setInt(2,relatedId);
+		stmt.setString(3,relatedType);
+		stmt.setString(4,field);
+		stmt.setDouble(5,order);
 		stmt.executeUpdate();
+
+		// snag the new auto-increment value
+		ResultSet irs = stmt.getGeneratedKeys();
+		while (irs.next()) {
+			ID = irs.getInt(1);
+		}
+
 		stmt.close();
+
+		log.debug("generating new FilesRelatedMorphs " + ID);
+
 		freeConnection();
 	}
 

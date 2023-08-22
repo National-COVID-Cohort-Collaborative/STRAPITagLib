@@ -107,6 +107,13 @@
     <li><a href="<util:applicationRoot/>/researcherEssentialsNavTilesLinks/list.jsp" />ResearcherEssentialsNavTilesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/resources/list.jsp" />Resources list</a></li>
     <li><a href="<util:applicationRoot/>/supports/list.jsp" />Supports list</a></li>
+    <li><a href="<util:applicationRoot/>/teamCreations/list.jsp" />TeamCreations list</a></li>
+    <li><a href="<util:applicationRoot/>/teamCreationsGuidelineFaqsLinks/list.jsp" />TeamCreationsGuidelineFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/teamCreationsLeadFaqsLinks/list.jsp" />TeamCreationsLeadFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/teamCreationsNavTilesLinks/list.jsp" />TeamCreationsNavTilesLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/teamCreationsReadyFaqsLinks/list.jsp" />TeamCreationsReadyFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/teamCreationsResourcesFaqsLinks/list.jsp" />TeamCreationsResourcesFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/teamCreationsResponsibilityFaqsLinks/list.jsp" />TeamCreationsResponsibilityFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/testimonials/list.jsp" />Testimonials list</a></li>
     <li><a href="<util:applicationRoot/>/tools/list.jsp" />Tools list</a></li>
     <li><a href="<util:applicationRoot/>/toolsDescriptionLinks/list.jsp" />ToolsDescriptionLinks list</a></li>
