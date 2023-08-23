@@ -121,7 +121,8 @@
     <li><a href="<util:applicationRoot/>/toolsToolLinks/list.jsp" />ToolsToolLinks list</a></li>
     <li><a href="<util:applicationRoot/>/trainings/list.jsp" />Trainings list</a></li>
     <li><a href="<util:applicationRoot/>/trainingsAdditionalResourcesLinks/list.jsp" />TrainingsAdditionalResourcesLinks list</a></li>
-    <li><a href="<util:applicationRoot/>/trainingsEugYouTubeVideoLinks/list.jsp" />TrainingsEugYouTubeVideoLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/trainingsEugYouTubeVideosLinks/list.jsp" />TrainingsEugYouTubeVideosLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/trainingsPortalResourcesLinks/list.jsp" />TrainingsPortalResourcesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/trainingsSharedResourcesLinks/list.jsp" />TrainingsSharedResourcesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/trainingsYouTubeVideosLinks/list.jsp" />TrainingsYouTubeVideosLinks list</a></li>
     <li><a href="<util:applicationRoot/>/tutorials/list.jsp" />Tutorials list</a></li>

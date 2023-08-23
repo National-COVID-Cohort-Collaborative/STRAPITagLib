@@ -101,28 +101,30 @@
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:trainingsAdditionalResourcesLinks>
 			</strapi:foreachTrainingsAdditionalResourcesLinks>
 
-						<h2>TrainingsEugYouTubeVideoLinks List</h2>
+						<h2>TrainingsEugYouTubeVideosLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">
 							<thead>
 								<tr>
 									<th>ID</th>
 									<th>TrainingId</th>
 									<th>YouTubeVideoId</th>
+									<th>YouTubeVideoOrder</th>
 									<th></th>
 								</tr>
 							</thead>
 							<tbody>
-								<strapi:foreachTrainingsEugYouTubeVideoLinks var="idIter">
-									<strapi:trainingsEugYouTubeVideoLinks>
+								<strapi:foreachTrainingsEugYouTubeVideosLinks var="idIter">
+									<strapi:trainingsEugYouTubeVideosLinks>
 										<tr>
-											<td><a href="../trainingsEugYouTubeVideoLinks/show.jsp?ID=<strapi:trainingsEugYouTubeVideoLinksID />"><strapi:trainingsEugYouTubeVideoLinksID /></a></td>
-											<td><strapi:trainingsEugYouTubeVideoLinksTrainingId /></td>
-											<td><strapi:trainingsEugYouTubeVideoLinksYouTubeVideoId /></td>
-											<td><a href="../trainingsEugYouTubeVideoLinks/edit.jsp?ID=<strapi:trainingsEugYouTubeVideoLinksID />">edit</a></td>
-											<td><a href="../trainingsEugYouTubeVideoLinks/delete.jsp?ID=<strapi:trainingsEugYouTubeVideoLinksID />">delete</a></td>
+											<td><a href="../trainingsEugYouTubeVideosLinks/show.jsp?ID=<strapi:trainingsEugYouTubeVideosLinksID />"><strapi:trainingsEugYouTubeVideosLinksID /></a></td>
+											<td><strapi:trainingsEugYouTubeVideosLinksTrainingId /></td>
+											<td><strapi:trainingsEugYouTubeVideosLinksYouTubeVideoId /></td>
+											<td><strapi:trainingsEugYouTubeVideosLinksYouTubeVideoOrder /></td>
+											<td><a href="../trainingsEugYouTubeVideosLinks/edit.jsp?ID=<strapi:trainingsEugYouTubeVideosLinksID />">edit</a></td>
+											<td><a href="../trainingsEugYouTubeVideosLinks/delete.jsp?ID=<strapi:trainingsEugYouTubeVideosLinksID />">delete</a></td>
 										</tr>
-									</strapi:trainingsEugYouTubeVideoLinks>
-								</strapi:foreachTrainingsEugYouTubeVideoLinks>
+									</strapi:trainingsEugYouTubeVideosLinks>
+								</strapi:foreachTrainingsEugYouTubeVideosLinks>
 							</tbody>
 							<tfoot>
 							</tfoot>
@@ -130,16 +132,60 @@
 
 						<br/>
 
-						<a class="btn" href="../trainingsEugYouTubeVideoLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add TrainingsEugYouTubeVideoLinks</a>
+						<a class="btn" href="../trainingsEugYouTubeVideosLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add TrainingsEugYouTubeVideosLinks</a>
 						<br/><br/>
 
-		<strapi:foreachTrainingsEugYouTubeVideoLinks var="idIter">
-			<strapi:trainingsEugYouTubeVideoLinks>
-						<a href="../../strapi/trainingsEugYouTubeVideoLinks/trainingsEugYouTubeVideoLinks.jsp?ID=<strapi:trainingsEugYouTubeVideoLinksID />"><strapi:trainingsEugYouTubeVideoLinksID /></a>
-		<strapi:trainingsEugYouTubeVideoLinksTrainingId />
-		<strapi:trainingsEugYouTubeVideoLinksYouTubeVideoId />
-			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:trainingsEugYouTubeVideoLinks>
-			</strapi:foreachTrainingsEugYouTubeVideoLinks>
+		<strapi:foreachTrainingsEugYouTubeVideosLinks var="idIter">
+			<strapi:trainingsEugYouTubeVideosLinks>
+						<a href="../../strapi/trainingsEugYouTubeVideosLinks/trainingsEugYouTubeVideosLinks.jsp?ID=<strapi:trainingsEugYouTubeVideosLinksID />"><strapi:trainingsEugYouTubeVideosLinksID /></a>
+		<strapi:trainingsEugYouTubeVideosLinksTrainingId />
+		<strapi:trainingsEugYouTubeVideosLinksYouTubeVideoId />
+		<strapi:trainingsEugYouTubeVideosLinksYouTubeVideoOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:trainingsEugYouTubeVideosLinks>
+			</strapi:foreachTrainingsEugYouTubeVideosLinks>
+
+						<h2>TrainingsPortalResourcesLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>TrainingId</th>
+									<th>ResourceId</th>
+									<th>ResourceOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachTrainingsPortalResourcesLinks var="idIter">
+									<strapi:trainingsPortalResourcesLinks>
+										<tr>
+											<td><a href="../trainingsPortalResourcesLinks/show.jsp?ID=<strapi:trainingsPortalResourcesLinksID />"><strapi:trainingsPortalResourcesLinksID /></a></td>
+											<td><strapi:trainingsPortalResourcesLinksTrainingId /></td>
+											<td><strapi:trainingsPortalResourcesLinksResourceId /></td>
+											<td><strapi:trainingsPortalResourcesLinksResourceOrder /></td>
+											<td><a href="../trainingsPortalResourcesLinks/edit.jsp?ID=<strapi:trainingsPortalResourcesLinksID />">edit</a></td>
+											<td><a href="../trainingsPortalResourcesLinks/delete.jsp?ID=<strapi:trainingsPortalResourcesLinksID />">delete</a></td>
+										</tr>
+									</strapi:trainingsPortalResourcesLinks>
+								</strapi:foreachTrainingsPortalResourcesLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../trainingsPortalResourcesLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add TrainingsPortalResourcesLinks</a>
+						<br/><br/>
+
+		<strapi:foreachTrainingsPortalResourcesLinks var="idIter">
+			<strapi:trainingsPortalResourcesLinks>
+						<a href="../../strapi/trainingsPortalResourcesLinks/trainingsPortalResourcesLinks.jsp?ID=<strapi:trainingsPortalResourcesLinksID />"><strapi:trainingsPortalResourcesLinksID /></a>
+		<strapi:trainingsPortalResourcesLinksTrainingId />
+		<strapi:trainingsPortalResourcesLinksResourceId />
+		<strapi:trainingsPortalResourcesLinksResourceOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:trainingsPortalResourcesLinks>
+			</strapi:foreachTrainingsPortalResourcesLinks>
 
 						<h2>TrainingsSharedResourcesLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">

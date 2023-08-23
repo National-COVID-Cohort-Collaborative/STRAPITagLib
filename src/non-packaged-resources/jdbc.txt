@@ -957,6 +957,7 @@ database: strapitaglib	uid: null
 			child PoliciesInstitutionResourcesLinks
 			child PoliciesUserResourcesLinks
 			child TrainingsAdditionalResourcesLinks
+			child TrainingsPortalResourcesLinks
 			child TrainingsSharedResourcesLinks
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
@@ -1065,7 +1066,8 @@ database: strapitaglib	uid: null
 			attribute: contentImageBlockRightOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: Trainings	uid: null
 			child TrainingsAdditionalResourcesLinks
-			child TrainingsEugYouTubeVideoLinks
+			child TrainingsEugYouTubeVideosLinks
+			child TrainingsPortalResourcesLinks
 			child TrainingsSharedResourcesLinks
 			child TrainingsYouTubeVideosLinks
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
@@ -1092,10 +1094,16 @@ database: strapitaglib	uid: null
 			attribute: trainingId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: resourceId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: resourceOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
-		entity: TrainingsEugYouTubeVideoLinks	uid: null
+		entity: TrainingsEugYouTubeVideosLinks	uid: null
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: trainingId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: youTubeVideoId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: youTubeVideoOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TrainingsPortalResourcesLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: trainingId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: resourceId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: resourceOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: TrainingsSharedResourcesLinks	uid: null
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: trainingId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
@@ -1186,7 +1194,7 @@ database: strapitaglib	uid: null
 			child DomainTeamsYouTubeVideosLinks
 			child ExternalDatasetsYouTubeVideoLinks
 			child PresentationsYouTubeVideosLinks
-			child TrainingsEugYouTubeVideoLinks
+			child TrainingsEugYouTubeVideosLinks
 			child TrainingsYouTubeVideosLinks
 			child TutorialsYouTubeVideosLinks
 			child WorkstreamsYouTubeVideoLinks
@@ -1317,6 +1325,7 @@ database: strapitaglib	uid: null
 		source entity: Resources	target entity: PoliciesInstitutionResourcesLinks	uid: null
 		source entity: Resources	target entity: PoliciesUserResourcesLinks	uid: null
 		source entity: Resources	target entity: TrainingsAdditionalResourcesLinks	uid: null
+		source entity: Resources	target entity: TrainingsPortalResourcesLinks	uid: null
 		source entity: Resources	target entity: TrainingsSharedResourcesLinks	uid: null
 		source entity: TeamCreations	target entity: TeamCreationsGuidelineFaqsLinks	uid: null
 		source entity: TeamCreations	target entity: TeamCreationsLeadFaqsLinks	uid: null
@@ -1328,7 +1337,8 @@ database: strapitaglib	uid: null
 		source entity: Tools	target entity: ToolsDescriptionLinks	uid: null
 		source entity: Tools	target entity: ToolsToolLinks	uid: null
 		source entity: Trainings	target entity: TrainingsAdditionalResourcesLinks	uid: null
-		source entity: Trainings	target entity: TrainingsEugYouTubeVideoLinks	uid: null
+		source entity: Trainings	target entity: TrainingsEugYouTubeVideosLinks	uid: null
+		source entity: Trainings	target entity: TrainingsPortalResourcesLinks	uid: null
 		source entity: Trainings	target entity: TrainingsSharedResourcesLinks	uid: null
 		source entity: Trainings	target entity: TrainingsYouTubeVideosLinks	uid: null
 		source entity: Tutorials	target entity: TutorialsYouTubeVideosLinks	uid: null
@@ -1341,7 +1351,7 @@ database: strapitaglib	uid: null
 		source entity: YouTubeVideos	target entity: DomainTeamsYouTubeVideosLinks	uid: null
 		source entity: YouTubeVideos	target entity: ExternalDatasetsYouTubeVideoLinks	uid: null
 		source entity: YouTubeVideos	target entity: PresentationsYouTubeVideosLinks	uid: null
-		source entity: YouTubeVideos	target entity: TrainingsEugYouTubeVideoLinks	uid: null
+		source entity: YouTubeVideos	target entity: TrainingsEugYouTubeVideosLinks	uid: null
 		source entity: YouTubeVideos	target entity: TrainingsYouTubeVideosLinks	uid: null
 		source entity: YouTubeVideos	target entity: TutorialsYouTubeVideosLinks	uid: null
 		source entity: YouTubeVideos	target entity: WorkstreamsYouTubeVideoLinks	uid: null

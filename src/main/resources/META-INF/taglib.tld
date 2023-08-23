@@ -21039,8 +21039,8 @@
 	</tag>
 
 	<tag>
-		<name>foreachTrainingsEugYouTubeVideoLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksIterator</tag-class>
+		<name>foreachTrainingsEugYouTubeVideosLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksIterator</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -21088,8 +21088,8 @@
 	</tag>
 
 	<tag>
-		<name>trainingsEugYouTubeVideoLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinks</tag-class>
+		<name>trainingsEugYouTubeVideosLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinks</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -21106,8 +21106,8 @@
 	</tag>
 
 	<tag>
-		<name>deleteTrainingsEugYouTubeVideoLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksDeleter</tag-class>
+		<name>deleteTrainingsEugYouTubeVideosLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksDeleter</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -21118,8 +21118,8 @@
 	</tag>
 
 	<tag>
-		<name>trainingsEugYouTubeVideoLinksID</name>
-		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksID</tag-class>
+		<name>trainingsEugYouTubeVideosLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksID</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -21130,8 +21130,8 @@
 	</tag>
 
 	<tag>
-		<name>trainingsEugYouTubeVideoLinksTrainingId</name>
-		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksTrainingId</tag-class>
+		<name>trainingsEugYouTubeVideosLinksTrainingId</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksTrainingId</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -21142,12 +21142,151 @@
 	</tag>
 
 	<tag>
-		<name>trainingsEugYouTubeVideoLinksYouTubeVideoId</name>
-		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksYouTubeVideoId</tag-class>
+		<name>trainingsEugYouTubeVideosLinksYouTubeVideoId</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksYouTubeVideoId</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
 			<name>youTubeVideoId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>trainingsEugYouTubeVideosLinksYouTubeVideoOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksYouTubeVideoOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>youTubeVideoOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTrainingsPortalResourcesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useResources</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTrainings</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>trainingsPortalResourcesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTrainingsPortalResourcesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>trainingsPortalResourcesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>trainingsPortalResourcesLinksTrainingId</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksTrainingId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>trainingId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>trainingsPortalResourcesLinksResourceId</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksResourceId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>resourceId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>trainingsPortalResourcesLinksResourceOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksResourceOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>resourceOrder</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -26017,39 +26156,69 @@
 	</function>
 
 	<function>
-		<name>trainingsEugYouTubeVideoLinksExists</name>
-		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksIterator</function-class>
-		<function-signature>java.lang.String trainingsEugYouTubeVideoLinksExists(java.lang.String)</function-signature>
+		<name>trainingsEugYouTubeVideosLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksIterator</function-class>
+		<function-signature>java.lang.String trainingsEugYouTubeVideosLinksExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>trainingsEugYouTubeVideoLinksCountByTrainings</name>
-		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksIterator</function-class>
-		<function-signature>java.lang.String trainingsEugYouTubeVideoLinksCountByTrainings(java.lang.String)</function-signature>
+		<name>trainingsEugYouTubeVideosLinksCountByTrainings</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksIterator</function-class>
+		<function-signature>java.lang.String trainingsEugYouTubeVideosLinksCountByTrainings(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>trainingsHasTrainingsEugYouTubeVideoLinks</name>
-		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksIterator</function-class>
-		<function-signature>java.lang.Boolean trainingsHasTrainingsEugYouTubeVideoLinks(java.lang.String)</function-signature>
+		<name>trainingsHasTrainingsEugYouTubeVideosLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksIterator</function-class>
+		<function-signature>java.lang.Boolean trainingsHasTrainingsEugYouTubeVideosLinks(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>trainingsEugYouTubeVideoLinksCountByYouTubeVideos</name>
-		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksIterator</function-class>
-		<function-signature>java.lang.String trainingsEugYouTubeVideoLinksCountByYouTubeVideos(java.lang.String)</function-signature>
+		<name>trainingsEugYouTubeVideosLinksCountByYouTubeVideos</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksIterator</function-class>
+		<function-signature>java.lang.String trainingsEugYouTubeVideosLinksCountByYouTubeVideos(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>youTubeVideosHasTrainingsEugYouTubeVideoLinks</name>
-		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksIterator</function-class>
-		<function-signature>java.lang.Boolean youTubeVideosHasTrainingsEugYouTubeVideoLinks(java.lang.String)</function-signature>
+		<name>youTubeVideosHasTrainingsEugYouTubeVideosLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksIterator</function-class>
+		<function-signature>java.lang.Boolean youTubeVideosHasTrainingsEugYouTubeVideosLinks(java.lang.String)</function-signature>
 	</function>
 
 	<function>
 		<name>trainingsYouTubeVideosExists</name>
-		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideoLinks.TrainingsEugYouTubeVideoLinksIterator</function-class>
+		<function-class>org.cd2h.STRAPITagLib.trainingsEugYouTubeVideosLinks.TrainingsEugYouTubeVideosLinksIterator</function-class>
 		<function-signature>java.lang.Boolean trainingsYouTubeVideosExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>trainingsPortalResourcesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksIterator</function-class>
+		<function-signature>java.lang.String trainingsPortalResourcesLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>trainingsPortalResourcesLinksCountByResources</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksIterator</function-class>
+		<function-signature>java.lang.String trainingsPortalResourcesLinksCountByResources(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>resourcesHasTrainingsPortalResourcesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean resourcesHasTrainingsPortalResourcesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>trainingsPortalResourcesLinksCountByTrainings</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksIterator</function-class>
+		<function-signature>java.lang.String trainingsPortalResourcesLinksCountByTrainings(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>trainingsHasTrainingsPortalResourcesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.trainingsPortalResourcesLinks.TrainingsPortalResourcesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean trainingsHasTrainingsPortalResourcesLinks(java.lang.String)</function-signature>
 	</function>
 
 	<function>
