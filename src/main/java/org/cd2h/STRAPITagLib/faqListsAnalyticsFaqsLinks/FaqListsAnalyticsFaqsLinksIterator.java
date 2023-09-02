@@ -194,8 +194,10 @@ public class FaqListsAnalyticsFaqsLinksIterator extends STRAPITagLibBodyTagSuppo
 
             if ( rs != null && rs.next() ) {
                 ID = rs.getInt(1);
-                if (var != null)
+                if (var != null) {
                     pageContext.setAttribute(var, this);
+                    pageContext.setAttribute(var+"Count", ++rsCount);
+                }
                 return EVAL_BODY_INCLUDE;
             }
         } catch (SQLException e) {
@@ -267,6 +269,7 @@ public class FaqListsAnalyticsFaqsLinksIterator extends STRAPITagLibBodyTagSuppo
         try {
             if ( rs != null && rs.next() ) {
                 ID = rs.getInt(1);
+                pageContext.setAttribute(var+"Count", ++rsCount);
                 return EVAL_BODY_AGAIN;
             }
         } catch (SQLException e) {
