@@ -79,6 +79,7 @@ public class WorkstreamsYouTubeVideoLinks extends STRAPITagLibTagSupport {
 						youTubeVideoId = rs.getInt(2);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -97,6 +98,7 @@ public class WorkstreamsYouTubeVideoLinks extends STRAPITagLibTagSupport {
 						youTubeVideoId = rs.getInt(2);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -115,6 +117,7 @@ public class WorkstreamsYouTubeVideoLinks extends STRAPITagLibTagSupport {
 						youTubeVideoId = rs.getInt(2);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -249,6 +252,7 @@ public class WorkstreamsYouTubeVideoLinks extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new WorkstreamsYouTubeVideoLinks " + ID);

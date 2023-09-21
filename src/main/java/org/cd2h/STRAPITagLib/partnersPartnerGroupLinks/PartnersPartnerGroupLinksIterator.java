@@ -54,6 +54,7 @@ public class PartnersPartnerGroupLinksIterator extends STRAPITagLibBodyTagSuppor
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating PartnersPartnerGroupLinks iterator", e);
@@ -82,6 +83,7 @@ public class PartnersPartnerGroupLinksIterator extends STRAPITagLibBodyTagSuppor
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating PartnersPartnerGroupLinks iterator", e);
@@ -110,6 +112,7 @@ public class PartnersPartnerGroupLinksIterator extends STRAPITagLibBodyTagSuppor
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating PartnersPartnerGroupLinks iterator", e);
@@ -134,6 +137,7 @@ public class PartnersPartnerGroupLinksIterator extends STRAPITagLibBodyTagSuppor
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating PartnersPartnerGroupLinks iterator", e);

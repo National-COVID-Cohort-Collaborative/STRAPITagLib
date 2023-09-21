@@ -85,6 +85,7 @@ public class ContentImageBlockLefts extends STRAPITagLibTagSupport {
 						urlLabel = rs.getString(9);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -234,6 +235,7 @@ public class ContentImageBlockLefts extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new ContentImageBlockLefts " + ID);

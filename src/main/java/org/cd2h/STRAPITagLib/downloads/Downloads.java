@@ -118,6 +118,7 @@ public class Downloads extends STRAPITagLibTagSupport {
 						updatedById = rs.getInt(20);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -322,6 +323,7 @@ public class Downloads extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new Downloads " + ID);

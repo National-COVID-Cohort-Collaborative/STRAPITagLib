@@ -73,6 +73,7 @@ public class Leaderships extends STRAPITagLibTagSupport {
 						updatedById = rs.getInt(5);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -202,6 +203,7 @@ public class Leaderships extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new Leaderships " + ID);

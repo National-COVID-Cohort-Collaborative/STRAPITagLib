@@ -88,6 +88,7 @@ public class Onboardings extends STRAPITagLibTagSupport {
 						block2 = rs.getString(10);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -242,6 +243,7 @@ public class Onboardings extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new Onboardings " + ID);

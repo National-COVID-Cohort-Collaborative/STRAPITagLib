@@ -45,6 +45,7 @@ public class PoliciesIterator extends STRAPITagLibBodyTagSupport {
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating Policies iterator", e);
@@ -69,6 +70,7 @@ public class PoliciesIterator extends STRAPITagLibBodyTagSupport {
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating Policies iterator", e);

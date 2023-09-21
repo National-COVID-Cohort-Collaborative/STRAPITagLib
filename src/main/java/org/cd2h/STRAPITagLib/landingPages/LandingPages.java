@@ -82,6 +82,7 @@ public class LandingPages extends STRAPITagLibTagSupport {
 						researchers = rs.getString(8);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -226,6 +227,7 @@ public class LandingPages extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new LandingPages " + ID);

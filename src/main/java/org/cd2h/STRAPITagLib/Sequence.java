@@ -58,6 +58,7 @@ public class Sequence extends STRAPITagLibTagSupport {
 					while (rs.next()) {
 						nextInt = rs.getInt(1);
 					}
+					rs.close();
 					stat.close();
 					break;
 				case SQLSERVER:

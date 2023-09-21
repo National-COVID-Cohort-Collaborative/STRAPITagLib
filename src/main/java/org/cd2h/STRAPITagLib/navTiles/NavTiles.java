@@ -88,6 +88,7 @@ public class NavTiles extends STRAPITagLibTagSupport {
 						block = rs.getString(10);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -242,6 +243,7 @@ public class NavTiles extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new NavTiles " + ID);

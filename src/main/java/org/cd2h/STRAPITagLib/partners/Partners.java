@@ -79,6 +79,7 @@ public class Partners extends STRAPITagLibTagSupport {
 						updatedById = rs.getInt(7);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -218,6 +219,7 @@ public class Partners extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new Partners " + ID);

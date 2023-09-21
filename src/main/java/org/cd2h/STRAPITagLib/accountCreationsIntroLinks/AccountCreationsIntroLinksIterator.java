@@ -54,6 +54,7 @@ public class AccountCreationsIntroLinksIterator extends STRAPITagLibBodyTagSuppo
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating AccountCreationsIntroLinks iterator", e);
@@ -82,6 +83,7 @@ public class AccountCreationsIntroLinksIterator extends STRAPITagLibBodyTagSuppo
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating AccountCreationsIntroLinks iterator", e);
@@ -110,6 +112,7 @@ public class AccountCreationsIntroLinksIterator extends STRAPITagLibBodyTagSuppo
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating AccountCreationsIntroLinks iterator", e);
@@ -134,6 +137,7 @@ public class AccountCreationsIntroLinksIterator extends STRAPITagLibBodyTagSuppo
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating AccountCreationsIntroLinks iterator", e);

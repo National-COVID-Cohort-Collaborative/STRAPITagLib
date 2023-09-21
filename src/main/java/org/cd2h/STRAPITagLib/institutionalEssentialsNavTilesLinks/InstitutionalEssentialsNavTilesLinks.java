@@ -82,6 +82,7 @@ public class InstitutionalEssentialsNavTilesLinks extends STRAPITagLibTagSupport
 						navTileOrder = rs.getDouble(3);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -102,6 +103,7 @@ public class InstitutionalEssentialsNavTilesLinks extends STRAPITagLibTagSupport
 						navTileOrder = rs.getDouble(3);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -122,6 +124,7 @@ public class InstitutionalEssentialsNavTilesLinks extends STRAPITagLibTagSupport
 						navTileOrder = rs.getDouble(3);
 					found = true;
 				}
+				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -258,6 +261,7 @@ public class InstitutionalEssentialsNavTilesLinks extends STRAPITagLibTagSupport
 			ID = irs.getInt(1);
 		}
 
+		irs.close();
 		stmt.close();
 
 		log.debug("generating new InstitutionalEssentialsNavTilesLinks " + ID);
