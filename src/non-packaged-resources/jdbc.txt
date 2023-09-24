@@ -202,6 +202,7 @@ database: strapitaglib	uid: null
 			attribute: slackUrl	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: slackLinkText	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: crossCutting	uid: null	type: boolean	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: alias	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: DomainTeamsLeadsLinks	uid: null
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: domainTeamId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
@@ -919,6 +920,15 @@ database: strapitaglib	uid: null
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: publicationReviewId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: contentImageBlockLeftId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: Redirects	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: source	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: target	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: ResearcherEssentials	uid: null
 			child ResearcherEssentialsAccessBlockLinks
 			child ResearcherEssentialsDomainBlockLinks

@@ -1,4 +1,4 @@
-package org.cd2h.STRAPITagLib.domainTeams;
+package org.cd2h.STRAPITagLib.redirects;
 
 
 import java.sql.PreparedStatement;
@@ -16,29 +16,18 @@ import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
 import org.cd2h.STRAPITagLib.STRAPITagLibBodyTagSupport;
 
 @SuppressWarnings("serial")
-public class DomainTeamsDeleter extends STRAPITagLibBodyTagSupport {
+public class RedirectsDeleter extends STRAPITagLibBodyTagSupport {
     int ID = 0;
-    String name = null;
-    String description = null;
+    String source = null;
+    String target = null;
     Timestamp createdAt = null;
     Timestamp updatedAt = null;
     Timestamp publishedAt = null;
     int createdById = 0;
     int updatedById = 0;
-    String summary = null;
-    String supplementalInformation = null;
-    String googleDriveUrl = null;
-    String googleDriveLinkText = null;
-    String googleGroupEmail = null;
-    String joinUrl = null;
-    String joinLinkText = null;
-    String slackUrl = null;
-    String slackLinkText = null;
-    boolean crossCutting = false;
-    String alias = null;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
-	private static final Logger log = LogManager.getLogger(DomainTeamsDeleter.class);
+	private static final Logger log = LogManager.getLogger(RedirectsDeleter.class);
 
 
     ResultSet rs = null;
@@ -52,14 +41,14 @@ public class DomainTeamsDeleter extends STRAPITagLibBodyTagSupport {
         PreparedStatement stat;
         try {
             int webapp_keySeq = 1;
-            stat = getConnection().prepareStatement("DELETE from strapi.domain_teams where 1=1"
+            stat = getConnection().prepareStatement("DELETE from strapi.redirects where 1=1"
                                                         + (ID == 0 ? "" : " and id = ? "));
             if (ID != 0) stat.setInt(webapp_keySeq++, ID);
             stat.execute();
 
 			webapp_keySeq = 1;
         } catch (SQLException e) {
-            log.error("JDBC error generating DomainTeams deleter", e);
+            log.error("JDBC error generating Redirects deleter", e);
 
 			clearServiceState();
 			freeConnection();
@@ -68,10 +57,10 @@ public class DomainTeamsDeleter extends STRAPITagLibBodyTagSupport {
 			if(parent != null){
 				pageContext.setAttribute("tagError", true);
 				pageContext.setAttribute("tagErrorException", e);
-				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating DomainTeams deleter");
+				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating Redirects deleter");
 				return parent.doEndTag();
 			}else{
-				throw new JspException("Error: JDBC error generating DomainTeams deleter",e);
+				throw new JspException("Error: JDBC error generating Redirects deleter",e);
 			}
 
         } finally {

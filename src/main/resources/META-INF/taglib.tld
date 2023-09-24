@@ -3523,6 +3523,18 @@
 	</tag>
 
 	<tag>
+		<name>domainTeamsAlias</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsAlias</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>alias</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachDomainTeamsLeadsLinks</name>
 		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -17659,6 +17671,204 @@
 	</tag>
 
 	<tag>
+		<name>foreachRedirects</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirects</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.Redirects</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteRedirects</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsSource</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsSource</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>source</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsTarget</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsTarget</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>target</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>redirectsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.redirects.RedirectsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachResearcherEssentials</name>
 		<tag-class>org.cd2h.STRAPITagLib.researcherEssentials.ResearcherEssentialsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -25601,6 +25811,18 @@
 		<name>contentImageBlockLeftsPublicationReviewsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.publicationReviewsIntroBlockLinks.PublicationReviewsIntroBlockLinksIterator</function-class>
 		<function-signature>java.lang.Boolean contentImageBlockLeftsPublicationReviewsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>redirectsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.redirects.RedirectsIterator</function-class>
+		<function-signature>java.lang.String redirectsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>redirectsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.redirects.RedirectsIterator</function-class>
+		<function-signature>java.lang.String redirectsExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>

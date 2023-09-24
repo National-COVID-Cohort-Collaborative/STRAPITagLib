@@ -86,6 +86,10 @@
 											<input type="text" id="crossCutting" name="crossCutting" size="40" value="<strapi:domainTeamsCrossCutting />">
 											<br>
 
+											<label for="alias">Alias</label>
+											<input type="text" id="alias" name="alias" size="40" value="<strapi:domainTeamsAlias />">
+											<br>
+
 											<input type="submit" name="submit" value="Save">
 											<input type="submit" name="submit" value="Cancel">
 											<input type="hidden" name="ID" value="${param.ID}">
@@ -124,6 +128,7 @@
 			<strapi:domainTeamsSlackUrl slackUrl = "${param.slackUrl}" />
 			<strapi:domainTeamsSlackLinkText slackLinkText = "${param.slackLinkText}" />
 			<strapi:domainTeamsCrossCutting crossCutting = "${param.crossCutting}" />
+			<strapi:domainTeamsAlias alias = "${param.alias}" />
 		</strapi:domainTeams>
 		<c:redirect url="list.jsp" />
 	</c:when>

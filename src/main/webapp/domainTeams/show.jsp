@@ -33,6 +33,7 @@
 			<th>SlackUrl</th>
 			<th>SlackLinkText</th>
 			<th>CrossCutting</th>
+			<th>Alias</th>
 			</tr>
 			<tr>
 				<td><a href="edit.jsp?ID=<strapi:domainTeamsID />"><strapi:domainTeamsID /></a></td>
@@ -53,6 +54,7 @@
 				<td><strapi:domainTeamsSlackUrl /></td>
 				<td><strapi:domainTeamsSlackLinkText /></td>
 				<td><strapi:domainTeamsCrossCutting /></td>
+				<td><strapi:domainTeamsAlias /></td>
 			</tr>
 		</table>
 

@@ -46,6 +46,7 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 	String slackUrl = null;
 	String slackLinkText = null;
 	boolean crossCutting = false;
+	String alias = null;
 
 	private String var = null;
 
@@ -69,7 +70,7 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a DomainTeams from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select name,description,created_at,updated_at,published_at,created_by_id,updated_by_id,summary,supplemental_information,google_drive_url,google_drive_link_text,google_group_email,join_url,join_link_text,slack_url,slack_link_text,cross_cutting from strapi.domain_teams where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select name,description,created_at,updated_at,published_at,created_by_id,updated_by_id,summary,supplemental_information,google_drive_url,google_drive_link_text,google_group_email,join_url,join_link_text,slack_url,slack_link_text,cross_cutting,alias from strapi.domain_teams where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -107,6 +108,8 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 						slackLinkText = rs.getString(16);
 					if (crossCutting == false)
 						crossCutting = rs.getBoolean(17);
+					if (alias == null)
+						alias = rs.getString(18);
 					found = true;
 				}
 				rs.close();
@@ -186,7 +189,7 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.domain_teams set name = ?, description = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, summary = ?, supplemental_information = ?, google_drive_url = ?, google_drive_link_text = ?, google_group_email = ?, join_url = ?, join_link_text = ?, slack_url = ?, slack_link_text = ?, cross_cutting = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.domain_teams set name = ?, description = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, summary = ?, supplemental_information = ?, google_drive_url = ?, google_drive_link_text = ?, google_group_email = ?, join_url = ?, join_link_text = ?, slack_url = ?, slack_link_text = ?, cross_cutting = ?, alias = ? where id = ? ");
 				stmt.setString( 1, name );
 				stmt.setString( 2, description );
 				stmt.setTimestamp( 3, createdAt );
@@ -204,7 +207,8 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 				stmt.setString( 15, slackUrl );
 				stmt.setString( 16, slackLinkText );
 				stmt.setBoolean( 17, crossCutting );
-				stmt.setInt(18,ID);
+				stmt.setString( 18, alias );
+				stmt.setInt(19,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -270,7 +274,10 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		if (slackLinkText == null){
 			slackLinkText = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.domain_teams(name,description,created_at,updated_at,published_at,created_by_id,updated_by_id,summary,supplemental_information,google_drive_url,google_drive_link_text,google_group_email,join_url,join_link_text,slack_url,slack_link_text,cross_cutting) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (alias == null){
+			alias = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.domain_teams(name,description,created_at,updated_at,published_at,created_by_id,updated_by_id,summary,supplemental_information,google_drive_url,google_drive_link_text,google_group_email,join_url,join_link_text,slack_url,slack_link_text,cross_cutting,alias) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setString(1,name);
 		stmt.setString(2,description);
 		stmt.setTimestamp(3,createdAt);
@@ -288,6 +295,7 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		stmt.setString(15,slackUrl);
 		stmt.setString(16,slackLinkText);
 		stmt.setBoolean(17,crossCutting);
+		stmt.setString(18,alias);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -585,6 +593,22 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		return crossCutting;
 	}
 
+	public String getAlias () {
+		if (commitNeeded)
+			return "";
+		else
+			return alias;
+	}
+
+	public void setAlias (String alias) {
+		this.alias = alias;
+		commitNeeded = true;
+	}
+
+	public String getActualAlias () {
+		return alias;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -741,6 +765,14 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String aliasValue() throws JspException {
+		try {
+			return currentInstance.getAlias();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function aliasValue()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		name = null;
@@ -760,6 +792,7 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		slackUrl = null;
 		slackLinkText = null;
 		crossCutting = false;
+		alias = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();

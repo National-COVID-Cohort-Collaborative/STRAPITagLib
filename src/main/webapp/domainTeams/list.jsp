@@ -33,6 +33,7 @@
 									<th>SlackUrl</th>
 									<th>SlackLinkText</th>
 									<th>CrossCutting</th>
+									<th>Alias</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -58,6 +59,7 @@
 											<td><strapi:domainTeamsSlackUrl /></td>
 											<td><strapi:domainTeamsSlackLinkText /></td>
 											<td><strapi:domainTeamsCrossCutting /></td>
+											<td><strapi:domainTeamsAlias /></td>
 											<td><a href="../domainTeams/edit.jsp?ID=<strapi:domainTeamsID />">edit</a></td>
 											<td><a href="../domainTeams/delete.jsp?ID=<strapi:domainTeamsID />">delete</a></td>
 										</tr>
@@ -93,6 +95,7 @@
 		<strapi:domainTeamsSlackUrl />
 		<strapi:domainTeamsSlackLinkText />
 		<strapi:domainTeamsCrossCutting />
+		<strapi:domainTeamsAlias />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:domainTeams>
 			</strapi:foreachDomainTeams>
                 </div>

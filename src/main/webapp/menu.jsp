@@ -100,6 +100,7 @@
     <li><a href="<util:applicationRoot/>/publicationReviewsFaqs1Links/list.jsp" />PublicationReviewsFaqs1Links list</a></li>
     <li><a href="<util:applicationRoot/>/publicationReviewsFaqs2Links/list.jsp" />PublicationReviewsFaqs2Links list</a></li>
     <li><a href="<util:applicationRoot/>/publicationReviewsIntroBlockLinks/list.jsp" />PublicationReviewsIntroBlockLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/redirects/list.jsp" />Redirects list</a></li>
     <li><a href="<util:applicationRoot/>/researcherEssentials/list.jsp" />ResearcherEssentials list</a></li>
     <li><a href="<util:applicationRoot/>/researcherEssentialsAccessBlockLinks/list.jsp" />ResearcherEssentialsAccessBlockLinks list</a></li>
     <li><a href="<util:applicationRoot/>/researcherEssentialsDomainBlockLinks/list.jsp" />ResearcherEssentialsDomainBlockLinks list</a></li>
