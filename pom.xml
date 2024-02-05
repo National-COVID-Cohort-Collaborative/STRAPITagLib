@@ -139,7 +139,7 @@
 						</property>
 						<property>
 							<name>db.url</name>
-							<value>jdbc:postgresql://neuromancer.info-science.uiowa.edu/strapi</value>
+							<value>jdbc:postgresql://neuromancer.info-science.uiowa.edu/cd2h</value>
 						</property>
 						<property>
 							<name>db.schema</name>

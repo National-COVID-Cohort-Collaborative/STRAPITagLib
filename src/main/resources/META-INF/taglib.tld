@@ -4805,6 +4805,192 @@
 	</tag>
 
 	<tag>
+		<name>foreachDummies</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummies</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.Dummies</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteDummies</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesID</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesA</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesA</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>a</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>dummiesUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.dummies.DummiesUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachDurRequests</name>
 		<tag-class>org.cd2h.STRAPITagLib.durRequests.DurRequestsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -20130,6 +20316,1910 @@
 	</tag>
 
 	<tag>
+		<name>foreachTenantAccountChecklists</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklists</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklists</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantAccountChecklists</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsHeader2</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsHeader2</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header2</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsChecklist</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsChecklist</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>checklist</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsTrailer</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsTrailer</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>trailer</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsIntro</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsIntro</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>intro</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountChecklistsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantDurRequests</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequests</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequests</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantDurRequests</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsRequestHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsRequestHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>requestHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsRequestBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsRequestBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>requestBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsOverviewHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsOverviewHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>overviewHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsOverviewBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsOverviewBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>overviewBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsProcessHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsProcessHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>processHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsPrereqHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsPrereqHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>prereqHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsPrereqBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsPrereqBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>prereqBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsSubmitHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsSubmitHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>submitHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsSubmitBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsSubmitBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>submitBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsSubmitBlock2</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsSubmitBlock2</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>submitBlock2</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsSubmitBlock3</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsSubmitBlock3</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>submitBlock3</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDurRequestsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantInstitutionalEssentials</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentials</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentials</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantInstitutionalEssentials</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsHeader2</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsHeader2</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header2</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantInstitutionalEssentialsJoinBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useContentImageBlockLefts</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantInstitutionalEssentials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsJoinBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantInstitutionalEssentialsJoinBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsJoinBlockLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsJoinBlockLinksTenantInstitutionalEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksTenantInstitutionalEssentialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantInstitutionalEssentialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsJoinBlockLinksContentImageBlockLeftId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksContentImageBlockLeftId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockLeftId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantInstitutionalEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useNavTiles</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantInstitutionalEssentials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantInstitutionalEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsNavTilesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsNavTilesLinksTenantInstitutionalEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksTenantInstitutionalEssentialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantInstitutionalEssentialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsNavTilesLinksNavTileId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksNavTileId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navTileId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsNavTilesLinksNavTileOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksNavTileOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navTileOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantInstitutionalEssentialsStepLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useContentImageBlockRights</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantInstitutionalEssentials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsStepLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantInstitutionalEssentialsStepLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsStepLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsStepLinksTenantInstitutionalEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksTenantInstitutionalEssentialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantInstitutionalEssentialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsStepLinksContentImageBlockRightId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksContentImageBlockRightId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockRightId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantInstitutionalEssentialsStepLinksContentImageBlockRightOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksContentImageBlockRightOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockRightOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantResearcherEssentials</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentials</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentials</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantResearcherEssentials</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantResearcherEssentialsAccessBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useContentImageBlockRights</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantResearcherEssentials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsAccessBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantResearcherEssentialsAccessBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsAccessBlockLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsAccessBlockLinksTenantResearcherEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksTenantResearcherEssentialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantResearcherEssentialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsAccessBlockLinksContentImageBlockRightId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksContentImageBlockRightId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockRightId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantResearcherEssentialsDomainBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useContentImageBlockLefts</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantResearcherEssentials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsDomainBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantResearcherEssentialsDomainBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsDomainBlockLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsDomainBlockLinksTenantResearcherEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksTenantResearcherEssentialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantResearcherEssentialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsDomainBlockLinksContentImageBlockLeftId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksContentImageBlockLeftId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockLeftId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantResearcherEssentialsGovernanceBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useContentImageBlockRights</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantResearcherEssentials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsGovernanceBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantResearcherEssentialsGovernanceBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsGovernanceBlockLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsGovernanceBlockLinksTenantResearcherEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksTenantResearcherEssentialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantResearcherEssentialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsGovernanceBlockLinksContentImageBlockRightId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksContentImageBlockRightId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockRightId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantResearcherEssentialsJoinBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useContentImageBlockLefts</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantResearcherEssentials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsJoinBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantResearcherEssentialsJoinBlockLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsJoinBlockLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsJoinBlockLinksTenantResearcherEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksTenantResearcherEssentialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantResearcherEssentialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsJoinBlockLinksContentImageBlockLeftId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksContentImageBlockLeftId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockLeftId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantResearcherEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useNavTiles</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantResearcherEssentials</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantResearcherEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsNavTilesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsNavTilesLinksTenantResearcherEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksTenantResearcherEssentialId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantResearcherEssentialId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsNavTilesLinksNavTileId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksNavTileId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navTileId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantResearcherEssentialsNavTilesLinksNavTileOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksNavTileOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navTileOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachTestimonials</name>
 		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -24062,6 +26152,18 @@
 	</function>
 
 	<function>
+		<name>dummiesCount</name>
+		<function-class>org.cd2h.STRAPITagLib.dummies.DummiesIterator</function-class>
+		<function-signature>java.lang.String dummiesCount()</function-signature>
+	</function>
+
+	<function>
+		<name>dummiesExists</name>
+		<function-class>org.cd2h.STRAPITagLib.dummies.DummiesIterator</function-class>
+		<function-signature>java.lang.String dummiesExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
 		<name>durRequestsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.durRequests.DurRequestsIterator</function-class>
 		<function-signature>java.lang.String durRequestsCount()</function-signature>
@@ -26231,6 +28333,330 @@
 		<name>teamCreationsHasTeamCreationsResponsibilityFaqsLinks</name>
 		<function-class>org.cd2h.STRAPITagLib.teamCreationsResponsibilityFaqsLinks.TeamCreationsResponsibilityFaqsLinksIterator</function-class>
 		<function-signature>java.lang.Boolean teamCreationsHasTeamCreationsResponsibilityFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountChecklistsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsIterator</function-class>
+		<function-signature>java.lang.String tenantAccountChecklistsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountChecklistsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsIterator</function-class>
+		<function-signature>java.lang.String tenantAccountChecklistsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantDurRequestsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsIterator</function-class>
+		<function-signature>java.lang.String tenantDurRequestsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>tenantDurRequestsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsIterator</function-class>
+		<function-signature>java.lang.String tenantDurRequestsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentials.TenantInstitutionalEssentialsIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsJoinBlockLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsJoinBlockLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsJoinBlockLinksCountByContentImageBlockLefts</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsJoinBlockLinksCountByContentImageBlockLefts(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockLeftsHasTenantInstitutionalEssentialsJoinBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockLeftsHasTenantInstitutionalEssentialsJoinBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsJoinBlockLinksCountByTenantInstitutionalEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsJoinBlockLinksCountByTenantInstitutionalEssentials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsHasTenantInstitutionalEssentialsJoinBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantInstitutionalEssentialsHasTenantInstitutionalEssentialsJoinBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockLeftsTenantInstitutionalEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsJoinBlockLinks.TenantInstitutionalEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockLeftsTenantInstitutionalEssentialsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsNavTilesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsNavTilesLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsNavTilesLinksCountByNavTiles</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsNavTilesLinksCountByNavTiles(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navTilesHasTenantInstitutionalEssentialsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesHasTenantInstitutionalEssentialsNavTilesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsNavTilesLinksCountByTenantInstitutionalEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsNavTilesLinksCountByTenantInstitutionalEssentials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsHasTenantInstitutionalEssentialsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantInstitutionalEssentialsHasTenantInstitutionalEssentialsNavTilesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navTilesTenantInstitutionalEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsNavTilesLinks.TenantInstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesTenantInstitutionalEssentialsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsStepLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsStepLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsStepLinksCountByContentImageBlockRights</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsStepLinksCountByContentImageBlockRights(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockRightsHasTenantInstitutionalEssentialsStepLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockRightsHasTenantInstitutionalEssentialsStepLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsStepLinksCountByTenantInstitutionalEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksIterator</function-class>
+		<function-signature>java.lang.String tenantInstitutionalEssentialsStepLinksCountByTenantInstitutionalEssentials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantInstitutionalEssentialsHasTenantInstitutionalEssentialsStepLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantInstitutionalEssentialsHasTenantInstitutionalEssentialsStepLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockRightsTenantInstitutionalEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantInstitutionalEssentialsStepLinks.TenantInstitutionalEssentialsStepLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockRightsTenantInstitutionalEssentialsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsAccessBlockLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsAccessBlockLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsAccessBlockLinksCountByContentImageBlockRights</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsAccessBlockLinksCountByContentImageBlockRights(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockRightsHasTenantResearcherEssentialsAccessBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockRightsHasTenantResearcherEssentialsAccessBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsAccessBlockLinksCountByTenantResearcherEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsAccessBlockLinksCountByTenantResearcherEssentials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsHasTenantResearcherEssentialsAccessBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantResearcherEssentialsHasTenantResearcherEssentialsAccessBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockRightsTenantResearcherEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsAccessBlockLinks.TenantResearcherEssentialsAccessBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockRightsTenantResearcherEssentialsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsDomainBlockLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsDomainBlockLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsDomainBlockLinksCountByContentImageBlockLefts</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsDomainBlockLinksCountByContentImageBlockLefts(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockLeftsHasTenantResearcherEssentialsDomainBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockLeftsHasTenantResearcherEssentialsDomainBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsDomainBlockLinksCountByTenantResearcherEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsDomainBlockLinksCountByTenantResearcherEssentials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsHasTenantResearcherEssentialsDomainBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantResearcherEssentialsHasTenantResearcherEssentialsDomainBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockLeftsTenantResearcherEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsDomainBlockLinks.TenantResearcherEssentialsDomainBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockLeftsTenantResearcherEssentialsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsGovernanceBlockLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsGovernanceBlockLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsGovernanceBlockLinksCountByContentImageBlockRights</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsGovernanceBlockLinksCountByContentImageBlockRights(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockRightsHasTenantResearcherEssentialsGovernanceBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockRightsHasTenantResearcherEssentialsGovernanceBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsGovernanceBlockLinksCountByTenantResearcherEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsGovernanceBlockLinksCountByTenantResearcherEssentials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsHasTenantResearcherEssentialsGovernanceBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsGovernanceBlockLinks.TenantResearcherEssentialsGovernanceBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantResearcherEssentialsHasTenantResearcherEssentialsGovernanceBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsJoinBlockLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsJoinBlockLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsJoinBlockLinksCountByContentImageBlockLefts</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsJoinBlockLinksCountByContentImageBlockLefts(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockLeftsHasTenantResearcherEssentialsJoinBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockLeftsHasTenantResearcherEssentialsJoinBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsJoinBlockLinksCountByTenantResearcherEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsJoinBlockLinksCountByTenantResearcherEssentials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsHasTenantResearcherEssentialsJoinBlockLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsJoinBlockLinks.TenantResearcherEssentialsJoinBlockLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantResearcherEssentialsHasTenantResearcherEssentialsJoinBlockLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsNavTilesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsNavTilesLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsNavTilesLinksCountByNavTiles</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsNavTilesLinksCountByNavTiles(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navTilesHasTenantResearcherEssentialsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesHasTenantResearcherEssentialsNavTilesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsNavTilesLinksCountByTenantResearcherEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String tenantResearcherEssentialsNavTilesLinksCountByTenantResearcherEssentials(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantResearcherEssentialsHasTenantResearcherEssentialsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantResearcherEssentialsHasTenantResearcherEssentialsNavTilesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navTilesTenantResearcherEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentialsNavTilesLinks.TenantResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesTenantResearcherEssentialsExists(java.lang.String, java.lang.String)</function-signature>
 	</function>
 
 	<function>

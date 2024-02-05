@@ -26,6 +26,7 @@
     <li><a href="<util:applicationRoot/>/domainsDomainTeamsLinks/list.jsp" />DomainsDomainTeamsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/downloads/list.jsp" />Downloads list</a></li>
     <li><a href="<util:applicationRoot/>/duaLists/list.jsp" />DuaLists list</a></li>
+    <li><a href="<util:applicationRoot/>/dummies/list.jsp" />Dummies list</a></li>
     <li><a href="<util:applicationRoot/>/durRequests/list.jsp" />DurRequests list</a></li>
     <li><a href="<util:applicationRoot/>/enclaveEssentials/list.jsp" />EnclaveEssentials list</a></li>
     <li><a href="<util:applicationRoot/>/enclaveEssentialsDescriptionLinks/list.jsp" />EnclaveEssentialsDescriptionLinks list</a></li>
@@ -116,6 +117,18 @@
     <li><a href="<util:applicationRoot/>/teamCreationsReadyFaqsLinks/list.jsp" />TeamCreationsReadyFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/teamCreationsResourcesFaqsLinks/list.jsp" />TeamCreationsResourcesFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/teamCreationsResponsibilityFaqsLinks/list.jsp" />TeamCreationsResponsibilityFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantAccountChecklists/list.jsp" />TenantAccountChecklists list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantDurRequests/list.jsp" />TenantDurRequests list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentials/list.jsp" />TenantInstitutionalEssentials list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsJoinBlockLinks/list.jsp" />TenantInstitutionalEssentialsJoinBlockLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsNavTilesLinks/list.jsp" />TenantInstitutionalEssentialsNavTilesLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsStepLinks/list.jsp" />TenantInstitutionalEssentialsStepLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantResearcherEssentials/list.jsp" />TenantResearcherEssentials list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsAccessBlockLinks/list.jsp" />TenantResearcherEssentialsAccessBlockLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsDomainBlockLinks/list.jsp" />TenantResearcherEssentialsDomainBlockLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsGovernanceBlockLinks/list.jsp" />TenantResearcherEssentialsGovernanceBlockLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsJoinBlockLinks/list.jsp" />TenantResearcherEssentialsJoinBlockLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsNavTilesLinks/list.jsp" />TenantResearcherEssentialsNavTilesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/testimonials/list.jsp" />Testimonials list</a></li>
     <li><a href="<util:applicationRoot/>/tools/list.jsp" />Tools list</a></li>
     <li><a href="<util:applicationRoot/>/toolsDescriptionLinks/list.jsp" />ToolsDescriptionLinks list</a></li>

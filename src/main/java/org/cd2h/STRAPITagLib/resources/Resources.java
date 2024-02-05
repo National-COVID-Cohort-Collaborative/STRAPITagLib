@@ -85,7 +85,6 @@ public class Resources extends STRAPITagLibTagSupport {
 						updatedById = rs.getInt(9);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -235,7 +234,6 @@ public class Resources extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
-		irs.close();
 		stmt.close();
 
 		log.debug("generating new Resources " + ID);

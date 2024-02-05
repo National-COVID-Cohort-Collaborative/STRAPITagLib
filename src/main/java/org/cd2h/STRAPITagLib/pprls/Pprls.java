@@ -130,7 +130,6 @@ public class Pprls extends STRAPITagLibTagSupport {
 						faqBlock = rs.getString(24);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -355,7 +354,6 @@ public class Pprls extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
-		irs.close();
 		stmt.close();
 
 		log.debug("generating new Pprls " + ID);

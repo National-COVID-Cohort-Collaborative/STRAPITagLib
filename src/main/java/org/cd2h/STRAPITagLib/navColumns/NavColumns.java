@@ -79,7 +79,6 @@ public class NavColumns extends STRAPITagLibTagSupport {
 						url = rs.getString(7);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -219,7 +218,6 @@ public class NavColumns extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
-		irs.close();
 		stmt.close();
 
 		log.debug("generating new NavColumns " + ID);

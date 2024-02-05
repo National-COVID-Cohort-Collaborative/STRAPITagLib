@@ -112,7 +112,6 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 						alias = rs.getString(18);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -304,7 +303,6 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
-		irs.close();
 		stmt.close();
 
 		log.debug("generating new DomainTeams " + ID);

@@ -136,6 +136,9 @@ database: strapitaglib	uid: null
 			child PublicationReviewsIntroBlockLinks
 			child ResearcherEssentialsDomainBlockLinks
 			child ResearcherEssentialsJoinBlockLinks
+			child TenantInstitutionalEssentialsJoinBlockLinks
+			child TenantResearcherEssentialsDomainBlockLinks
+			child TenantResearcherEssentialsJoinBlockLinks
 			child ToolsDescriptionLinks
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: content	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
@@ -158,6 +161,9 @@ database: strapitaglib	uid: null
 			child OnboardingsStepLinks
 			child ResearcherEssentialsAccessBlockLinks
 			child ResearcherEssentialsGovernanceBlockLinks
+			child TenantInstitutionalEssentialsStepLinks
+			child TenantResearcherEssentialsAccessBlockLinks
+			child TenantResearcherEssentialsGovernanceBlockLinks
 			child ToolsToolLinks
 			child WorkstreamsIntroLinks
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
@@ -261,6 +267,14 @@ database: strapitaglib	uid: null
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: block1	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: Dummies	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: a	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
@@ -651,6 +665,8 @@ database: strapitaglib	uid: null
 			child OnboardingsNavTilesLinks
 			child ResearcherEssentialsNavTilesLinks
 			child TeamCreationsNavTilesLinks
+			child TenantInstitutionalEssentialsNavTilesLinks
+			child TenantResearcherEssentialsNavTilesLinks
 			child WorkstreamInstancesNavTilesLinks
 			child WorkstreamsNavTilesLinks
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
@@ -1042,6 +1058,98 @@ database: strapitaglib	uid: null
 			attribute: teamCreationId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: faqId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: faqOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantAccountChecklists	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header2	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: checklist	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: trailer	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: intro	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantDurRequests	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: requestHeader	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: requestBlock	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: overviewHeader	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: overviewBlock	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: processHeader	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: prereqHeader	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: prereqBlock	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: submitHeader	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: submitBlock	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: submitBlock2	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: submitBlock3	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantInstitutionalEssentials	uid: null
+			child TenantInstitutionalEssentialsJoinBlockLinks
+			child TenantInstitutionalEssentialsNavTilesLinks
+			child TenantInstitutionalEssentialsStepLinks
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header2	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: block	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantInstitutionalEssentialsJoinBlockLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantInstitutionalEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockLeftId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantInstitutionalEssentialsNavTilesLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantInstitutionalEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: navTileId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: navTileOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantInstitutionalEssentialsStepLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantInstitutionalEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockRightId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockRightOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantResearcherEssentials	uid: null
+			child TenantResearcherEssentialsAccessBlockLinks
+			child TenantResearcherEssentialsDomainBlockLinks
+			child TenantResearcherEssentialsGovernanceBlockLinks
+			child TenantResearcherEssentialsJoinBlockLinks
+			child TenantResearcherEssentialsNavTilesLinks
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantResearcherEssentialsAccessBlockLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantResearcherEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockRightId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantResearcherEssentialsDomainBlockLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantResearcherEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockLeftId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantResearcherEssentialsGovernanceBlockLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantResearcherEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockRightId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantResearcherEssentialsJoinBlockLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantResearcherEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockLeftId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantResearcherEssentialsNavTilesLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantResearcherEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: navTileId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: navTileOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: Testimonials	uid: null
 			child LandingPagesTestimonialsLinks
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
@@ -1237,6 +1345,9 @@ database: strapitaglib	uid: null
 		source entity: ContentImageBlockLefts	target entity: PublicationReviewsIntroBlockLinks	uid: null
 		source entity: ContentImageBlockLefts	target entity: ResearcherEssentialsDomainBlockLinks	uid: null
 		source entity: ContentImageBlockLefts	target entity: ResearcherEssentialsJoinBlockLinks	uid: null
+		source entity: ContentImageBlockLefts	target entity: TenantInstitutionalEssentialsJoinBlockLinks	uid: null
+		source entity: ContentImageBlockLefts	target entity: TenantResearcherEssentialsDomainBlockLinks	uid: null
+		source entity: ContentImageBlockLefts	target entity: TenantResearcherEssentialsJoinBlockLinks	uid: null
 		source entity: ContentImageBlockLefts	target entity: ToolsDescriptionLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: AccountCreationsInstructionsLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: AccountCreationsIntroLinks	uid: null
@@ -1248,6 +1359,9 @@ database: strapitaglib	uid: null
 		source entity: ContentImageBlockRights	target entity: OnboardingsStepLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: ResearcherEssentialsAccessBlockLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: ResearcherEssentialsGovernanceBlockLinks	uid: null
+		source entity: ContentImageBlockRights	target entity: TenantInstitutionalEssentialsStepLinks	uid: null
+		source entity: ContentImageBlockRights	target entity: TenantResearcherEssentialsAccessBlockLinks	uid: null
+		source entity: ContentImageBlockRights	target entity: TenantResearcherEssentialsGovernanceBlockLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: ToolsToolLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: WorkstreamsIntroLinks	uid: null
 		source entity: DomainTeams	target entity: DomainTeamsLeadsLinks	uid: null
@@ -1306,6 +1420,8 @@ database: strapitaglib	uid: null
 		source entity: NavTiles	target entity: OnboardingsNavTilesLinks	uid: null
 		source entity: NavTiles	target entity: ResearcherEssentialsNavTilesLinks	uid: null
 		source entity: NavTiles	target entity: TeamCreationsNavTilesLinks	uid: null
+		source entity: NavTiles	target entity: TenantInstitutionalEssentialsNavTilesLinks	uid: null
+		source entity: NavTiles	target entity: TenantResearcherEssentialsNavTilesLinks	uid: null
 		source entity: NavTiles	target entity: WorkstreamInstancesNavTilesLinks	uid: null
 		source entity: NavTiles	target entity: WorkstreamsNavTilesLinks	uid: null
 		source entity: NewsItems	target entity: NewsItemsPressReleasesLinks	uid: null
@@ -1343,6 +1459,14 @@ database: strapitaglib	uid: null
 		source entity: TeamCreations	target entity: TeamCreationsReadyFaqsLinks	uid: null
 		source entity: TeamCreations	target entity: TeamCreationsResourcesFaqsLinks	uid: null
 		source entity: TeamCreations	target entity: TeamCreationsResponsibilityFaqsLinks	uid: null
+		source entity: TenantInstitutionalEssentials	target entity: TenantInstitutionalEssentialsJoinBlockLinks	uid: null
+		source entity: TenantInstitutionalEssentials	target entity: TenantInstitutionalEssentialsNavTilesLinks	uid: null
+		source entity: TenantInstitutionalEssentials	target entity: TenantInstitutionalEssentialsStepLinks	uid: null
+		source entity: TenantResearcherEssentials	target entity: TenantResearcherEssentialsAccessBlockLinks	uid: null
+		source entity: TenantResearcherEssentials	target entity: TenantResearcherEssentialsDomainBlockLinks	uid: null
+		source entity: TenantResearcherEssentials	target entity: TenantResearcherEssentialsGovernanceBlockLinks	uid: null
+		source entity: TenantResearcherEssentials	target entity: TenantResearcherEssentialsJoinBlockLinks	uid: null
+		source entity: TenantResearcherEssentials	target entity: TenantResearcherEssentialsNavTilesLinks	uid: null
 		source entity: Testimonials	target entity: LandingPagesTestimonialsLinks	uid: null
 		source entity: Tools	target entity: ToolsDescriptionLinks	uid: null
 		source entity: Tools	target entity: ToolsToolLinks	uid: null

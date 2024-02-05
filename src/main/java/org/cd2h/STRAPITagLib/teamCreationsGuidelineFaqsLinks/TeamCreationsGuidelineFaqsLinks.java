@@ -82,7 +82,6 @@ public class TeamCreationsGuidelineFaqsLinks extends STRAPITagLibTagSupport {
 						faqOrder = rs.getDouble(3);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -103,7 +102,6 @@ public class TeamCreationsGuidelineFaqsLinks extends STRAPITagLibTagSupport {
 						faqOrder = rs.getDouble(3);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -124,7 +122,6 @@ public class TeamCreationsGuidelineFaqsLinks extends STRAPITagLibTagSupport {
 						faqOrder = rs.getDouble(3);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -261,7 +258,6 @@ public class TeamCreationsGuidelineFaqsLinks extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
-		irs.close();
 		stmt.close();
 
 		log.debug("generating new TeamCreationsGuidelineFaqsLinks " + ID);

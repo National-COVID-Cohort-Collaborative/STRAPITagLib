@@ -85,7 +85,6 @@ public class BiosBioGroupsLinks extends STRAPITagLibTagSupport {
 						bioOrder = rs.getDouble(4);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -108,7 +107,6 @@ public class BiosBioGroupsLinks extends STRAPITagLibTagSupport {
 						bioOrder = rs.getDouble(4);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -131,7 +129,6 @@ public class BiosBioGroupsLinks extends STRAPITagLibTagSupport {
 						bioOrder = rs.getDouble(4);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -270,7 +267,6 @@ public class BiosBioGroupsLinks extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
-		irs.close();
 		stmt.close();
 
 		log.debug("generating new BiosBioGroupsLinks " + ID);

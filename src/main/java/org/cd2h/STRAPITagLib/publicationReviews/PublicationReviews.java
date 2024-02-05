@@ -91,7 +91,6 @@ public class PublicationReviews extends STRAPITagLibTagSupport {
 						updatedById = rs.getInt(11);
 					found = true;
 				}
-				rs.close();
 				stmt.close();
 
 				if (!found) {
@@ -251,7 +250,6 @@ public class PublicationReviews extends STRAPITagLibTagSupport {
 			ID = irs.getInt(1);
 		}
 
-		irs.close();
 		stmt.close();
 
 		log.debug("generating new PublicationReviews " + ID);

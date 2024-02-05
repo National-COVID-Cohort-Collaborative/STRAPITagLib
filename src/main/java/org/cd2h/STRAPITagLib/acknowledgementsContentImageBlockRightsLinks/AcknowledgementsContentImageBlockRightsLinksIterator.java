@@ -54,7 +54,6 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
-			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating AcknowledgementsContentImageBlockRightsLinks iterator", e);
@@ -83,7 +82,6 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
-			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating AcknowledgementsContentImageBlockRightsLinks iterator", e);
@@ -112,7 +110,6 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
-			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating AcknowledgementsContentImageBlockRightsLinks iterator", e);
@@ -137,7 +134,6 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
-			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating AcknowledgementsContentImageBlockRightsLinks iterator", e);
@@ -198,10 +194,8 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
 
             if ( rs != null && rs.next() ) {
                 ID = rs.getInt(1);
-                if (var != null) {
+                if (var != null)
                     pageContext.setAttribute(var, this);
-                    pageContext.setAttribute(var+"Count", ++rsCount);
-                }
                 return EVAL_BODY_INCLUDE;
             }
         } catch (SQLException e) {
@@ -273,7 +267,6 @@ public class AcknowledgementsContentImageBlockRightsLinksIterator extends STRAPI
         try {
             if ( rs != null && rs.next() ) {
                 ID = rs.getInt(1);
-                pageContext.setAttribute(var+"Count", ++rsCount);
                 return EVAL_BODY_AGAIN;
             }
         } catch (SQLException e) {

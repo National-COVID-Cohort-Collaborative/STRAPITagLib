@@ -458,6 +458,129 @@
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:researcherEssentialsGovernanceBlockLinks>
 			</strapi:foreachResearcherEssentialsGovernanceBlockLinks>
 
+						<h2>TenantInstitutionalEssentialsStepLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>TenantInstitutionalEssentialId</th>
+									<th>ContentImageBlockRightId</th>
+									<th>ContentImageBlockRightOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachTenantInstitutionalEssentialsStepLinks var="idIter">
+									<strapi:tenantInstitutionalEssentialsStepLinks>
+										<tr>
+											<td><a href="../tenantInstitutionalEssentialsStepLinks/show.jsp?ID=<strapi:tenantInstitutionalEssentialsStepLinksID />"><strapi:tenantInstitutionalEssentialsStepLinksID /></a></td>
+											<td><strapi:tenantInstitutionalEssentialsStepLinksTenantInstitutionalEssentialId /></td>
+											<td><strapi:tenantInstitutionalEssentialsStepLinksContentImageBlockRightId /></td>
+											<td><strapi:tenantInstitutionalEssentialsStepLinksContentImageBlockRightOrder /></td>
+											<td><a href="../tenantInstitutionalEssentialsStepLinks/edit.jsp?ID=<strapi:tenantInstitutionalEssentialsStepLinksID />">edit</a></td>
+											<td><a href="../tenantInstitutionalEssentialsStepLinks/delete.jsp?ID=<strapi:tenantInstitutionalEssentialsStepLinksID />">delete</a></td>
+										</tr>
+									</strapi:tenantInstitutionalEssentialsStepLinks>
+								</strapi:foreachTenantInstitutionalEssentialsStepLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../tenantInstitutionalEssentialsStepLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add TenantInstitutionalEssentialsStepLinks</a>
+						<br/><br/>
+
+		<strapi:foreachTenantInstitutionalEssentialsStepLinks var="idIter">
+			<strapi:tenantInstitutionalEssentialsStepLinks>
+						<a href="../../strapi/tenantInstitutionalEssentialsStepLinks/tenantInstitutionalEssentialsStepLinks.jsp?ID=<strapi:tenantInstitutionalEssentialsStepLinksID />"><strapi:tenantInstitutionalEssentialsStepLinksID /></a>
+		<strapi:tenantInstitutionalEssentialsStepLinksTenantInstitutionalEssentialId />
+		<strapi:tenantInstitutionalEssentialsStepLinksContentImageBlockRightId />
+		<strapi:tenantInstitutionalEssentialsStepLinksContentImageBlockRightOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:tenantInstitutionalEssentialsStepLinks>
+			</strapi:foreachTenantInstitutionalEssentialsStepLinks>
+
+						<h2>TenantResearcherEssentialsAccessBlockLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>TenantResearcherEssentialId</th>
+									<th>ContentImageBlockRightId</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachTenantResearcherEssentialsAccessBlockLinks var="idIter">
+									<strapi:tenantResearcherEssentialsAccessBlockLinks>
+										<tr>
+											<td><a href="../tenantResearcherEssentialsAccessBlockLinks/show.jsp?ID=<strapi:tenantResearcherEssentialsAccessBlockLinksID />"><strapi:tenantResearcherEssentialsAccessBlockLinksID /></a></td>
+											<td><strapi:tenantResearcherEssentialsAccessBlockLinksTenantResearcherEssentialId /></td>
+											<td><strapi:tenantResearcherEssentialsAccessBlockLinksContentImageBlockRightId /></td>
+											<td><a href="../tenantResearcherEssentialsAccessBlockLinks/edit.jsp?ID=<strapi:tenantResearcherEssentialsAccessBlockLinksID />">edit</a></td>
+											<td><a href="../tenantResearcherEssentialsAccessBlockLinks/delete.jsp?ID=<strapi:tenantResearcherEssentialsAccessBlockLinksID />">delete</a></td>
+										</tr>
+									</strapi:tenantResearcherEssentialsAccessBlockLinks>
+								</strapi:foreachTenantResearcherEssentialsAccessBlockLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../tenantResearcherEssentialsAccessBlockLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add TenantResearcherEssentialsAccessBlockLinks</a>
+						<br/><br/>
+
+		<strapi:foreachTenantResearcherEssentialsAccessBlockLinks var="idIter">
+			<strapi:tenantResearcherEssentialsAccessBlockLinks>
+						<a href="../../strapi/tenantResearcherEssentialsAccessBlockLinks/tenantResearcherEssentialsAccessBlockLinks.jsp?ID=<strapi:tenantResearcherEssentialsAccessBlockLinksID />"><strapi:tenantResearcherEssentialsAccessBlockLinksID /></a>
+		<strapi:tenantResearcherEssentialsAccessBlockLinksTenantResearcherEssentialId />
+		<strapi:tenantResearcherEssentialsAccessBlockLinksContentImageBlockRightId />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:tenantResearcherEssentialsAccessBlockLinks>
+			</strapi:foreachTenantResearcherEssentialsAccessBlockLinks>
+
+						<h2>TenantResearcherEssentialsGovernanceBlockLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>TenantResearcherEssentialId</th>
+									<th>ContentImageBlockRightId</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachTenantResearcherEssentialsGovernanceBlockLinks var="idIter">
+									<strapi:tenantResearcherEssentialsGovernanceBlockLinks>
+										<tr>
+											<td><a href="../tenantResearcherEssentialsGovernanceBlockLinks/show.jsp?ID=<strapi:tenantResearcherEssentialsGovernanceBlockLinksID />"><strapi:tenantResearcherEssentialsGovernanceBlockLinksID /></a></td>
+											<td><strapi:tenantResearcherEssentialsGovernanceBlockLinksTenantResearcherEssentialId /></td>
+											<td><strapi:tenantResearcherEssentialsGovernanceBlockLinksContentImageBlockRightId /></td>
+											<td><a href="../tenantResearcherEssentialsGovernanceBlockLinks/edit.jsp?ID=<strapi:tenantResearcherEssentialsGovernanceBlockLinksID />">edit</a></td>
+											<td><a href="../tenantResearcherEssentialsGovernanceBlockLinks/delete.jsp?ID=<strapi:tenantResearcherEssentialsGovernanceBlockLinksID />">delete</a></td>
+										</tr>
+									</strapi:tenantResearcherEssentialsGovernanceBlockLinks>
+								</strapi:foreachTenantResearcherEssentialsGovernanceBlockLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../tenantResearcherEssentialsGovernanceBlockLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add TenantResearcherEssentialsGovernanceBlockLinks</a>
+						<br/><br/>
+
+		<strapi:foreachTenantResearcherEssentialsGovernanceBlockLinks var="idIter">
+			<strapi:tenantResearcherEssentialsGovernanceBlockLinks>
+						<a href="../../strapi/tenantResearcherEssentialsGovernanceBlockLinks/tenantResearcherEssentialsGovernanceBlockLinks.jsp?ID=<strapi:tenantResearcherEssentialsGovernanceBlockLinksID />"><strapi:tenantResearcherEssentialsGovernanceBlockLinksID /></a>
+		<strapi:tenantResearcherEssentialsGovernanceBlockLinksTenantResearcherEssentialId />
+		<strapi:tenantResearcherEssentialsGovernanceBlockLinksContentImageBlockRightId />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:tenantResearcherEssentialsGovernanceBlockLinks>
+			</strapi:foreachTenantResearcherEssentialsGovernanceBlockLinks>
+
 						<h2>ToolsToolLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">
 							<thead>
